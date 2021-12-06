@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>Popup Signup</title>
+</head>
+
+<body>
+    <div class="btn-signup">
+        <button class="modal-toggle">SIGN UP</button>
+    </div>
+    <div class="modal">
+        <div class="modal-overlay modal-toggle"></div>
+        <div class="modal-wrapper modal-transition">
+            <div class="modal-container">
+                <a href="void:javascipt" class="modal-toggle"><i class="fas fa-times"></i></a>
+                <div class="modal-header">
+                    <h2 class="modal-heading">Sign up for weekly drinks recommendations</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <form action="" method="post">
+                            <div class="form-signup">
+                                <div class="form-control form-control-fir">
+                                    <label for="signup-input-name">First name</label>
+                                    <input type="text" name="name">
+                                </div>
+                                <div class="form-control form-control-fir">
+                                    <label for="signup-input-lastname">Last name</label>
+                                    <input type="text" name="lastname">
+                                </div>
+                                <div class="form-control">
+                                    <label for="signup-input-email">E-mail</label>
+                                    <input name="email" id="signup-input-email"type="email">
+                                </div>
+                                <div class="form-control">
+                                    <label for="">Date of Birth<i class="required"></i></label>
+                                    <div class="form-date">
+                                        <input type="tel" class="form-input" id="signup-input-year"name="year" placeholder="Year"> 
+                                        <input type="tel" class="form-input"id="signup-input-month" name="month" placeholder="Month">
+                                        <input type="tel"class="form-input" id="signup-input-day" name="day" placeholder="Day" style="margin-right: unset;">
+                                    </div>
+                                </div>
+                                <div class="form-control"><label>Where do you live?<i class="required"></i></label>
+                                    <select id="signup-input-country" name="country" class="select-input">
+                                        <option value="null" disabled hidden="disabled" selected="selected" class="title-option">Choose a country
+                                        </option>
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BY">Belarus</option>
+                                    </select>
+                                </div>
+                                <div class="form-control"><label>Pick something you'd like to learn more about<i
+                                            class="required"></i></label>
+                                    <select id="signup-input-interest" name="interest" class="select-input">
+                                        <option value="XX" disabled hidden="disabled" selected="selected">Choose one</option>
+                                        <option value="HomeBartending">Home Bartending Hacks</option>
+                                        <option value="Hosting">Hosting Secrets</option>
+                                        <option value="CocktailCulture">Cocktail Trivia</option>
+                                    </select>
+                                </div>
+                                <div class="form-check">
+                                    <h6 class="title-checkbox">How do you like your drinks?</h6>
+                                    <div class="form-checkbox">
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">Sweet</label>
+                                        </div>
+                                        <div class="check-input like-all mx-auto">
+                                            <input id="flavor-sweet" value="Sweet" type="checkbox" class="regular-checkbox">
+                                            <label for="flavor-sweet">I like them all</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-control">
+                                    <input type="checkbox" tabindex="308" name="opt-in" class="regular-checkbox">
+                                    <label for="signup-input-opt-in">
+                                        I consent to receive news and promotional information
+                                        about Absolut*.
+                                    </label>
+                                </div>
+                                <div class="form-control">
+                                    <button type="submit"style="height:55px">Sign up</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
