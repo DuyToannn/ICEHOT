@@ -38,3 +38,7 @@ $('.show-more').on('click', function() {
 });
 
 
+document.querySelector(".recipe-seperator").classList.remove("hidden")
+document.querySelector(".recipe-wrapper").classList.remove("hidden"),
+    this.classList.add("hidden"),
+    window.dataLayer = window.dataLayer || [], window.dataLayer.push({ event: "interaction", eventCategory: "absolutdrinks", eventAction: "mobile view", eventLabel: "make this drink" })

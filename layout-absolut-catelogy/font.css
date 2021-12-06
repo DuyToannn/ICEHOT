@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Absolut Sans Medium';
+    src: url(../font/AbsolutSansTest01-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'Absolut Sans Rengular';
+    src: url(../font/AbsolutSansTest01-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'Absolut Sans Bold';
+    src: url(../font/AbsolutSansTest01-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'AbsolutHeadline';
+    src: url(../font/AbsolutHeadlineWeb2020-Condensed.woff2);
+}
+
+@font-face {
+    font-family: 'Absoluticon';
+    src: url(../font/absolut-drinks-icons.woff2);
+}
