@@ -1,0 +1,155 @@
+:root {
+    --color-blue: #183164;
+    --color-red: #E51753;
+}
+
+body {
+    font-family: 'Gotham Book', sans-serif;
+}
+
+.clr {
+    clear: both;
+}
+
+.header {
+    background: var(--color-blue);
+    height: 80px;
+    width: 100%;
+}
+
+.header__navbar {}
+
+.header__navbar-left {
+    margin-right: 65px;
+}
+
+.header__navbar-left ul {
+    padding-left: 0;
+}
+
+.header__navbar-left ul li {
+    padding-left: 60px;
+}
+
+.header__navbar-mid {}
+
+.header__navbar-mid img {}
+
+.header__navbar-right {
+    margin-left: 65px;
+}
+
+.header__navbar-right ul {
+    padding-left: 0;
+}
+
+.header__navbar-right ul li {
+    padding-right: 60px;
+}
+
+.list-navbar {
+    height: 60%;
+    align-items: center;
+}
+
+.list-navbar li {}
+
+.list-navbar li a {
+    font-family: 'Gotham Book';
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.item-fitst,
+.item-last {
+    padding: 0 !important;
+}
+
+.fa-search {
+    font-size: 18px;
+}
+
+.banner {
+    margin-top: 80px;
+}
+
+.banner-1 {
+    background-image: url(../img/banner/banner\ 1.webp);
+    background-repeat: no-repeat;
+    height: 900px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-2 {
+    background-image: url(../img/Picture15.png);
+    background-repeat: no-repeat;
+    height: 900px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* .banner-3 {
+    background-image: url(../img/Picture15.png);
+    background-repeat: no-repeat;
+    height: 900px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-4 {
+    background-image: url(../img/Picture15.png);
+    background-repeat: no-repeat;
+    height: 900px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.product {
+    padding-top: 100px;
+    padding-bottom: 2000px;
+}
+
+.product__highlights {}
+
+.title-heading {
+    text-align: center;
+}
+
+.title-heading h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-blue);
+}
+
+.product__items {}
+
+.product__items ul {
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.product__items ul li {}
+
+.product__items ul li a {}
+
+.product-img {
+    width: 100%;
+}
+
+.product-img img {}
+
+.product-name {
+    text-align: center;
+}
+
+.product-name h4 {
+    font-size: 18px;
+    color: var(--color-blue);
+}
