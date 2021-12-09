@@ -12,3 +12,8 @@
     font-family: 'Gotham Light';
     src: url(../fonts/Gotham/SVN-Gotham\ Light.otf);
 }
+
+@font-face {
+    font-family: 'Painter';
+    src: url(../fonts/Gotham/SVN-Sign\ Painter\ House\ Script.otf);
+}
