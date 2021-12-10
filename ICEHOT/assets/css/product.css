@@ -1,0 +1,118 @@
+body {
+    font-family: 'Gotham Book', sans-serif;
+}
+
+.text-product {
+    margin-top: 120px;
+}
+
+.banner-product {
+    text-align: center;
+    position: relative;
+}
+
+.name-product {
+    padding-top: 4px;
+    margin-top: -35px;
+    background: #fff;
+    position: relative;
+    width: 66.666667%;
+    text-align: center;
+    z-index: 99;
+}
+
+.name-product h1 {
+    color: var(--color-blue);
+    font-size: 68px;
+}
+
+.name-product p {
+    color: var(--color-blue);
+    font-weight: 600;
+}
+
+.drink-list-filter {
+    max-width: 280px;
+    width: 100%;
+}
+
+select#cars {
+    border: unset;
+    -webkit-appearance: none;
+}
+
+select#cars:focus {
+    outline: none;
+}
+
+.change-to-list,
+.change-to-column {
+    border: unset;
+    background: none;
+}
+
+.drink-list-filter ul {
+    padding-left: 0;
+}
+
+.drink-list-filter ul li {
+    padding: 10px 0;
+}
+
+.border-bottom-2 {
+    border-bottom: 2px solid #e2e8f0 !important;
+}
+
+.border-color {
+    border-bottom: 2px solid #e2e8f0;
+    border-top: 2px solid #e2e8f0;
+}
+
+.drink-list-filter ul li span {
+    color: var(--color-blue);
+    font-weight: 600;
+}
+
+.drink-list-filter ul li a {
+    color: var(--color-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+ul.list-item-kids-1,
+ul.list-item-kids-2 {
+    display: none;
+}
+
+.list-product-items {
+    margin-left: 20px;
+}
+
+.drink-content {
+    padding-left: 20px;
+}
+
+.drink-content h3 {
+    font-size: 18px;
+    color: var(--color-blue);
+    font-family: 'Gotham Bold';
+}
+
+.drink-content p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+.list-description ul {
+    padding-left: 0;
+}
+
+.list-description ul li {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-blue);
+}

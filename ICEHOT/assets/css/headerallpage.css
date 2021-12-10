@@ -1,0 +1,72 @@
+.header {
+    background: var(--color-blue);
+    height: 80px;
+    width: 100%;
+}
+
+
+/* .header__navbar {
+    height: 80px;
+    align-items: center;
+} */
+
+.header__navbar-left,
+.header__navbar-right {
+    flex-basis: 40%;
+}
+
+.header__navbar-left ul,
+.header__navbar-right ul {
+    padding-left: 0;
+    justify-content: space-around;
+}
+
+.header__navbar-left ul li {
+    text-align: center;
+}
+
+.header__navbar-right ul li {
+    text-align: center;
+}
+
+.list-navbar {
+    height: 60%;
+    align-items: center;
+}
+
+.list-navbar li a {
+    font-family: 'Gotham Book';
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 25px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    opacity: .7;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+.fa-search {
+    font-size: 18px;
+}
