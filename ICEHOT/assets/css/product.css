@@ -74,16 +74,14 @@ select#cars:focus {
 }
 
 .fa-chevron-down {
-    -moz-transition: all .5s linear;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
+
+    transition: all .3s linear;
 }
 
-.fa-chevron-down.down {
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+.lists-all-product {
+    flex: 1;
 }
+
 
 .drink-list-filter ul li a {
     color: var(--color-blue);
@@ -144,7 +142,7 @@ ul.list-item-kids-2 {
     bottom: 0;
     height: 48px;
     transition: all 0.4s;
-    background: linear-gradient( 180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .87));
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .87));
 }
 
 .drinks-star-rating {
