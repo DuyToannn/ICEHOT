@@ -1,249 +1,54 @@
-body {
-    font-family: 'Gotham Book', sans-serif;
+.layout {
+    margin-top: 80px;
 }
 
-.text-product {
+.title-product {
     margin-top: 120px;
-}
-
-.banner-product {
     text-align: center;
-    position: relative;
 }
 
-.name-product {
-    padding-top: 4px;
-    margin-top: -35px;
-    background: #fff;
-    position: relative;
-    width: 66.666667%;
+.title-product h1 {
+    font-size: 100px;
+    font-weight: 600;
+    color: #000;
+}
+
+.title-product p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #000;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0 10px
+}
+
+.product-list {
+    grid-template-columns: auto auto auto auto;
+}
+
+.product-list-item a img {
+    max-width: 100%;
+    transition: 0.4s;
+}
+
+.product-list-item a h3 {
     text-align: center;
-    z-index: 99;
-}
-
-.name-product h1 {
-    color: var(--color-blue);
-    font-size: 68px;
-}
-
-.name-product p {
-    color: var(--color-blue);
-    font-weight: 600;
-}
-
-.drink-list-filter {
-    max-width: 280px;
-    width: 100%;
-}
-
-select#cars {
-    border: unset;
-    -webkit-appearance: none;
-}
-
-select#cars:focus {
-    outline: none;
-}
-
-.change-to-list,
-.change-to-column {
-    border: unset;
-    background: none;
-}
-
-.drink-list-filter ul {
-    padding-left: 0;
-}
-
-.drink-list-filter ul li {
-    padding: 10px 0;
-}
-
-.border-bottom-2 {
-    border-bottom: 2px solid #e2e8f0 !important;
-}
-
-.border-color {
-    border-bottom: 2px solid #e2e8f0;
-    border-top: 2px solid #e2e8f0;
-}
-
-.drink-list-filter ul li span {
-    color: var(--color-blue);
-    font-weight: 600;
-}
-
-.fa-chevron-down {
-
-    transition: all .3s linear;
-}
-
-.lists-all-product {
-    flex: 1;
-}
-
-
-.drink-list-filter ul li a {
-    color: var(--color-blue);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-}
-
-ul.list-item-kids-1,
-ul.list-item-kids-2 {
-    display: none;
-}
-
-.list-product {
-    width: 100%;
-}
-
-.items-product {
-    display: flex;
-    padding: 30px 20px 65px;
-}
-
-.list-product-items {
-    margin-left: 20px;
-}
-
-.drink-content {
-    padding-left: 20px;
-    flex: 1;
-}
-
-.drink-content h3 {
-    font-size: 18px;
-    color: var(--color-blue);
-    font-family: 'Gotham Bold';
-}
-
-.drink-content p {
-    margin-bottom: 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-blue);
-}
-
-.list-description {
-    position: relative;
-}
-
-.blur::after {
-    position: absolute;
-    content: '';
-    opacity: 1;
-    /* Click hidden */
-    width: 50%;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 48px;
-    transition: all 0.4s;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .87));
-}
-
-.drinks-star-rating {
-    display: flex;
-    position: absolute;
-    top: 125%;
-}
-
-.fa-star {
-    color: #38d32f;
-}
-
-.list-description ul {
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
-.list-description ul li {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-blue);
-}
-
-.show-quick-view {
-    margin-top: 20px;
-    display: none;
-}
-
-.quick-view {
-    position: absolute;
-    color: #38d32f;
-    font-weight: 600;
-    top: 100%;
-}
-
-.quick-view:hover {
-    color: #38d32f;
-    text-decoration: underline !important;
-}
-
-.preview-special-drink {
-    position: absolute;
-    right: 0;
-    top: 90px;
-}
-
-.preview-special-drink button {
-    padding: 10px 20px;
-    margin-left: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    border-radius: 9999px;
-    color: var(--color-blue);
-    background-color: #f0f0f0;
-    border: unset;
-}
-
-.preview-special-drink button:hover {
-    background-color: #f0f0f0;
-    color: var(--color-blue);
-}
-
-.special-drink-entity {
-    padding: 10px 0;
-}
-
-.special-drink-entity button {
-    padding: 10px 20px;
-    margin-left: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    border-radius: 9999px;
-    color: var(--color-blue);
-    background-color: #f0f0f0;
-    border: unset;
-    margin-left: 0;
-}
-
-.special-drink-entity button:hover {
-    background-color: #f0f0f0;
-    color: var(--color-blue);
-}
-
-.make-drink {
-    padding: 10px;
-    color: #fff;
-    background: var(--color-blue);
-    text-transform: uppercase;
-    width: 65%;
-    border: none;
-    font-weight: 600;
+    font-size: 20px;
+    color: #000;
     margin-top: 10px;
 }
 
-.close-quick {
-    display: block;
-    padding: 10px;
-    width: 65%;
-    color: #38d32f;
-    font-weight: 600;
-    border: none;
-    margin-top: 10px;
-    background: #fff;
+.product-list a {
+    transition: 0.4s;
+}
+
+.product-list a:hover h3 {
+    color: var(--color-blue);
+    transition: 0.4s;
+}
+
+.product-list a:hover img {
+    transition: 0.4s;
+    transform: scale(1.05);
 }

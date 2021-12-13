@@ -18,20 +18,56 @@
 .header__navbar-left ul,
 .header__navbar-right ul {
     padding-left: 0;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.header__navbar-left ul li {
+.header__navbar-left .list-navbar .list-navbar-item,
+.header__navbar-right .list-navbar .list-navbar-item {
     text-align: center;
 }
 
-.header__navbar-right ul li {
-    text-align: center;
+.header__navbar-left .list-navbar .list-navbar-item:last-child {
+    margin-right: 90px;
+}
+
+.header__navbar-right .list-navbar .list-navbar-item:first-child {
+    margin-left: 90px;
 }
 
 .list-navbar {
     height: 60%;
     align-items: center;
+}
+
+.list-navbar-item {
+    position: relative;
+}
+
+.list-navbar-item::after {
+    content: '';
+    height: 90%;
+    width: 100%;
+    bottom: -28px;
+    left: 0;
+    position: absolute;
+}
+
+.list-navbar li:hover .sub-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-menu {
+    background: #95c1d6;
+    opacity: 0;
+    position: absolute;
+    transition: all .5s ease;
+    top: 53px;
+    transform: translateY(30px);
+}
+
+.sub-menu-item {
+    padding: 20px 35px;
 }
 
 .list-navbar li a {
