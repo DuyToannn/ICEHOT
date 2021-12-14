@@ -1,0 +1,213 @@
+.title-name {
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Gotham Bold';
+}
+
+.section-maps {
+    display: flex;
+    padding: 24px;
+    background: #f1f1f1;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.address-contact {
+    width: 40%;
+    border-radius: 25px;
+}
+
+.address-maps {
+    width: 60%;
+}
+
+.address-maps iframe {
+    border-radius: 25px;
+}
+
+.address-contact {
+    background-color: #183164;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gotham Bold';
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.gc {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -0.25em;
+    min-height: 1px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+.gc--1-of-3 {
+    width: 25%;
+}
+
+.gc--2-of-3 {
+    width: 66.66666%;
+}
+
+.naccs {
+    position: relative;
+    max-width: 900px;
+}
+
+.naccs .menu div {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 15px 20px 15px 40px;
+    margin-bottom: 10px;
+    color: #a7a7a7;
+    background: var(--color-blue);
+    box-shadow: 0 0 20px rgb(0 0 0 / 28%);
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    font-weight: 700;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.naccs .menu div span.light {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div.active span.light {
+    background-color: fff;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    border-radius: 0;
+}
+
+.naccs .menu div.active {
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+}
+
+ul.nacc {
+    position: relative;
+    height: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li {
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(50px);
+    position: absolute;
+    list-style: none;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li.active {
+    transition-delay: 0.3s;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+ul.nacc li p {
+    margin: 0;
+    color: #fff;
+    font-family: 'Gotham Light';
+}
+
+.section-contact {
+    margin-top: 80px;
+}
+
+.form-contact {
+    display: flex;
+    gap: 130px;
+}
+
+.section-contact form input {
+    background: transparent;
+    border: none;
+    padding: 0;
+    line-height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #EBEDEF;
+    font-family: inherit;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.section-contact form textarea {
+    font-size: 14px;
+    border: 1px solid #EBEDEF;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    padding: 20px;
+    margin-top: 20px;
+    outline: none;
+}
+
+.info-contact {
+    text-align: center;
+}
+
+.pb-40 {
+    padding-bottom: 30px;
+}
+
+.info-contact h2 {
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-family: 'Gotham Bold';
+}
+
+.info-contact h3 {
+    font-family: 'Gotham Bold';
+    color: #000;
+}
+
+.address {
+    font-size: 16px;
+    font-family: 'Gotham book';
+}
+
+button.btn.btn-primary.btn-submit {
+    background: #e51753;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 40px;
+    display: table;
+    padding: 0 20px;
+    margin: 40px auto;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Gotham book';
+}

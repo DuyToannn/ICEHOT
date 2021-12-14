@@ -2,3 +2,7 @@
     --color-blue: #183164;
     --color-red: #E51753;
 }
+
+body {
+    font-family: 'Gotham Bold';
+}

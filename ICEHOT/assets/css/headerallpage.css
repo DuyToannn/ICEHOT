@@ -1,3 +1,7 @@
+body {
+    font-family: 'Gotham Book';
+}
+
 .header {
     background: var(--color-blue);
     height: 80px;
@@ -61,14 +65,13 @@
     display: block;
 }
 
-.sub-menu-item a{
+.sub-menu-item a {
     color: var(--color-blue) !important;
     text-transform: unset !important;
 }
 
 .sub-menu {
     background: #fff;
-   
     opacity: 0;
     right: -85px;
     position: absolute;
@@ -80,8 +83,8 @@
     width: 250px;
     border-bottom: 6px solid var(--color-red);
     padding-bottom: 15px;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 56%);
 }
-
 
 .list-navbar li a {
     font-family: 'Gotham Book';
@@ -91,7 +94,8 @@
     text-transform: uppercase;
 }
 
-.underline {
+.underline,
+.underline-white {
     position: relative;
 }
 
@@ -108,8 +112,29 @@
     transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+.underline-white::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 25px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    opacity: .7;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 @media (hover: hover) and (pointer: fine) {
     .underline:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .underline-white:hover::before {
         left: 0;
         right: auto;
         width: 100%;
