@@ -22,8 +22,9 @@ body {
 }
 
 .name-product h1 {
+    font-family: 'Gotham Bold';
     color: var(--color-blue);
-    font-size: 68px;
+    font-size: 60px;
 }
 
 .name-product p {

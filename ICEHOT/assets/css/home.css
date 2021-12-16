@@ -11,21 +11,19 @@ body {
 }
 
 .banner-head-1 {
-    background-image: url(../img/banner/banner\ 1.webp);
-    background-repeat: no-repeat;
+    background-image: url(../img/banner/banner\ 1.webp) !important;
     height: 900px !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 .banner-head-2 {
-    background-image: url(../img/Picture15.png);
-    background-repeat: no-repeat;
+    background-image: url(../img/Picture15.png) !important;
     height: 900px !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 
@@ -99,6 +97,24 @@ body {
     width: 20%;
 }
 
+.hover-opa {
+    transition: 0.4s;
+}
+
+.hover-opa:hover {
+    opacity: .9;
+    transition: 0.4s;
+}
+
+.hover-scale img {
+    transition: 0.4s;
+}
+
+.hover-scale:hover img {
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
 .product__items ul li a {}
 
 .product-img:hover img {
@@ -127,12 +143,22 @@ body {
     transition: 0.4s;
 }
 
+.recipe-slider {
+    margin-top: 50px;
+}
+
 .product-name {
     text-align: center;
     margin-top: 12px;
 }
 
 .product-name h4 {
+    font-size: 16px;
+    color: var(--color-blue);
+}
+
+.product-recipe h4 {
+    margin-top: 15px;
     font-size: 16px;
     color: var(--color-blue);
 }
@@ -170,11 +196,20 @@ body {
 }
 
 .btn-discover {
-    padding: 5px 50px !important;
+    padding: 10px 50px !important;
     background: linear-gradient(275.76deg, #E51753 44.33%, #FF5463 98.56%);
     box-shadow: 0px 4px 20px rgba(255, 56, 74, 0.5);
     border-radius: 50px !important;
     border: unset !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Gotham Bold';
+    transition: 0.4s;
+}
+
+.btn-discover:hover {
+    opacity: .9;
+    transition: 0.4s;
 }
 
 .btn-discover:focus {
@@ -210,14 +245,77 @@ body {
     width: 6%;
     height: 26vh;
     right: 0;
+    top: 0;
 }
 
 .banner-3 {
+    position: relative;
+    display: flex;
+    align-items: center;
     margin-top: 100px;
-    background: url(../img/banner/banner\ 3.png);
+    background: url(../img/banner/banner\ 3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: calc(100vh - 164px);
+}
+
+.banner-3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.19);
+}
+
+.text-event {
+    padding-left: 60px;
+    max-width: 50%;
+    z-index: 9;
+}
+
+.text-event h2 {
+    font-family: 'Gotham Bold';
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.gift-users {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item .icon i {
+    font-size: 35px;
+}
+
+.item h5 {
+    margin: 0;
+    margin-left: 15px;
+}
+
+.text-event h4 {
+    color: #fff;
+    margin: 30px 0 40px;
+}
+
+.btn-event {
+    margin-top: 50px;
+    padding: 15px 20px !important;
+    transition: 0.4s;
+}
+
+.btn-event:hover {
+    opacity: .9;
+    transition: 0.4s;
 }
 
 .banner-4 {
@@ -226,6 +324,14 @@ body {
     background-size: cover;
     min-height: calc(100vh - 164px);
     background-position-y: center;
+}
+
+.banner-4::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.19);
 }
 
 .promos {}
