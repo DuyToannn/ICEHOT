@@ -1,3 +1,28 @@
+body {
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    background: url(../img/pattern/patterndot.png) no-repeat;
+    width: 15%;
+    height: 26vh;
+    left: -115px;
+    top: 128px;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    background: url(../img/pattern/patterncirlered.png) no-repeat;
+    width: 15%;
+    height: 26vh;
+    top: -151px;
+    right: 120px;
+    z-index: -1;
+}
+
 .layout {
     margin-top: 80px;
 }
