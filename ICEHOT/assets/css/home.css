@@ -10,38 +10,6 @@ body {
     margin-top: 80px;
 }
 
-.banner-head-1 {
-    background-image: url(../img/banner/banner\ 1.webp) !important;
-    height: 900px !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-
-.banner-head-2 {
-    background-image: url(../img/Picture15.png) !important;
-    height: 900px !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-
-
-/* .banner-head-3 {
-    background-image: url(../img/Picture15.png);
-    background-repeat: no-repeat;
-    height: 900px !important;
-    background-position: center;
-    background-size: cover;
-}
-.banner-head-4 {
-    background-image: url(../img/Picture15.png);
-    background-repeat: no-repeat;
-    height: 900px !important;
-    background-position: center;
-    background-size: cover;
-} */
-
 .clr {
     clear: both;
 }
@@ -319,6 +287,7 @@ body {
 }
 
 .banner-4 {
+    position: relative;
     background: url(../img/banner//banner\ 4.jpg);
     background-repeat: no-repeat;
     background-size: cover;

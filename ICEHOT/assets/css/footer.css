@@ -76,3 +76,8 @@ footer {
     top: 2rem;
     left: 81px;
 }
+
+.item-list-icon {
+    display: flex;
+    justify-content: end;
+}

@@ -118,14 +118,14 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li onclick="map('16.069836, 108.224918');">
                                     <div>
                                         <p>Văn phòng Hà Nội<br> Tầng 17, tòa nhà VTC Online 18 Tam Trinh, Quận Hai Bà Trưng
                                             <br> +84 24 3637 4040<br> ChamSocKhachHang@rich.com
                                         </p>
                                     </div>
                                 </li>
-                                <li>
+                                <li onclick="map('16.069836, 108.224918');">
                                     <div>
                                         <p>
                                             Văn phòng Đà Nẵng<br> Tầng 1, Tòa Nhà Quang Nguyễn, 244C Nguyễn Hữu Thọ, Phường Khuê Trung, Quận Cẩm Lệ, TP.Đà Nẵng<br> 0236 388 5001<br> ChamSocKhachHang@rich.com
@@ -156,34 +156,40 @@
             </div>
         </div>
         <div class="address-maps">
-            <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=10.7910183,106.6551232&amp;hl=vi-VN;z=16&amp;output=embed"></iframe>
+            <iframe width="100% " height="600 " frameborder="0 " scrolling="no " marginheight="0 " marginwidth="0 " src="https://maps.google.com/maps?q=10.7910183,106.6551232&amp;hl=vi-VN;z=16&amp;output=embed "></iframe>
         </div>
+        <script>
+            function map(_la) {
+                var iframe = '<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=' + _la + '&hl=vi-VN;z=16&amp;output=embed"></iframe>';
+                $('.address-maps').html(iframe);
+            }
+        </script>
     </section>
 
-    <section class="section-contact">
-        <div class="container">
-            <div class="form-contact">
-                <div class="info-contact">
-                    <h2 class="pb-40">Liên hệ</h2>
-                    <p class="pb-40">Vui lòng để lại thông tin liên hệ &amp; thắc mắc của bạn, chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+    <section class="section-contact ">
+        <div class="container ">
+            <div class="form-contact ">
+                <div class="info-contact ">
+                    <h2 class="pb-40 ">Liên hệ</h2>
+                    <p class="pb-40 ">Vui lòng để lại thông tin liên hệ &amp; thắc mắc của bạn, chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
                     <h3>RICH PRODUCTS VIỆT NAM</h3>
-                    <p class="address">Tầng 15, Tòa nhà Xổ Số Kiến Thiết<br>77 Trần Nhân Tôn, Phường 9, Quận 5, Tp. Hồ Chí Minh<br>Tel: 028 3866 4789 - Fax: +84 28 3866 2679<br>Email: ChamSocKhachHang@rich.com</p>
+                    <p class="address ">Tầng 15, Tòa nhà Xổ Số Kiến Thiết<br>77 Trần Nhân Tôn, Phường 9, Quận 5, Tp. Hồ Chí Minh<br>Tel: 028 3866 4789 - Fax: +84 28 3866 2679<br>Email: ChamSocKhachHang@rich.com</p>
                 </div>
-                <form action="" method="post">
-                    <input name="name" type="text" required="required" placeholder="Họ tên">
-                    <input name="phone" type="tel" placeholder="Số điện thoại">
-                    <input name="address" type="text" placeholder="Địa chỉ">
-                    <input name="email" type="email" required="required" placeholder="Email">
-                    <textarea name="message" placeholder="Hãy để lại yêu cầu của bạn."></textarea>
-                    <button type="submit" class="btn btn-primary btn-submit">Gửi yêu cầu</button>
+                <form action=" " method="post ">
+                    <input name="name " type="text " required="required " placeholder="Họ tên ">
+                    <input name="phone " type="tel " placeholder="Số điện thoại ">
+                    <input name="address " type="text " placeholder="Địa chỉ ">
+                    <input name="email " type="email " required="required " placeholder="Email ">
+                    <textarea name="message " placeholder="Hãy để lại yêu cầu của bạn. "></textarea>
+                    <button type="submit " class="btn btn-primary btn-submit ">Gửi yêu cầu</button>
                 </form>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="row footer__main">
-                <div class="col-7 footer-text">
+        <div class="container ">
+            <div class="row footer__main ">
+                <div class="col-7 footer-text ">
                     <p>Người đại diện theo pháp luật của doanh nghiệp: Ông Chan Wai Chiew</p>
                     <p>Giấy chứng nhận đăng ký kinh doanh số: 463042000005</p>
                     <p>Cấp ngày 19 tháng 10 năm 2006 | Nơi cấp: Ban quản lý Khu công nghiệp Việt Nam – Singapore</p>
@@ -191,31 +197,31 @@
                     <p>Địa chỉ văn phòng: Tầng 15, Tòa nhà Xổ Số Kiến Thiết, 77 Trần Nhân Tôn, Phường 9, Quận 5, Tp. Hồ Chí Minh</p>
                     <p>Tel: 028 3866 4789 | Fax: +84 28 3866 2679 | Email: ChamSocKhachHang@rich.com </p>
                 </div>
-                <div class="col-5 footer-icon">
-                    <div class="d-flex">
-                        <ul class="item-list-icon d-flex justify-content-end">
+                <div class="col-5 footer-icon ">
+                    <div class="d-flex ">
+                        <ul class="item-list-icon d-flex justify-content-end ">
                             <li>
-                                <a href=""><img src="./assets/img/iconfb.png" alt=""></a>
+                                <a href=" "><img src="./assets/img/iconfb.png " alt=" "></a>
                             </li>
                             <li>
-                                <a href=""><img src="./assets/img/iconyt.png" alt=""></a>
+                                <a href=" "><img src="./assets/img/iconyt.png " alt=" "></a>
                             </li>
                             <li>
-                                <a href=""><img src="./assets/img/icona+.png" alt=""></a>
+                                <a href=" "><img src="./assets/img/icona+.png " alt=" "></a>
                             </li>
                             <li>
-                                <a href=""><img src="./assets/img/iconecom.png" alt=""></a>
+                                <a href=" "><img src="./assets/img/iconecom.png " alt=" "></a>
                             </li>
                         </ul>
-                        <a href="#"><img src="./assets/img/boconthuong.png" alt="" class="img-check"></a>
+                        <a href="# "><img src="./assets/img/boconthuong.png " alt=" " class="img-check "></a>
                     </div>
                 </div>
-                <p class="copyright">© 2021 ICEHOT Vietnam, All Rights Reserved.
+                <p class="copyright ">© 2021 ICEHOT Vietnam, All Rights Reserved.
                 </p>
             </div>
         </div>
     </footer>
-    <script src="/assets/main/contact.js"></script>
+    <script src="/assets/main/contact.js "></script>
 </body>
 
 </html>

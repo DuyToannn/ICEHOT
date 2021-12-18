@@ -17,3 +17,9 @@ var swiper = new Swiper(".recipe-slider", {
         clickable: true,
     },
 });
+
+$(document).ready(function() {
+    $(".menu__btn").click(function() {
+        $('.navbar__mobile').slideToggle();
+    })
+})
