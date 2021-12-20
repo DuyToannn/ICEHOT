@@ -11,6 +11,10 @@ body {
     position: relative;
 }
 
+.banner-product img {
+    width: 100%;
+}
+
 .name-product {
     padding-top: 15px;
     margin-top: -47px;
@@ -34,6 +38,14 @@ body {
 
 .drink-list-filter {
     max-width: 280px;
+    width: 100%;
+}
+
+.list-item:last-child {
+    border-bottom: 1px solid #dee2e6!important;
+}
+
+.drink-img img {
     width: 100%;
 }
 
@@ -153,10 +165,10 @@ ul.list-item-kids-2 {
     content: '';
     opacity: 1;
     /* Click hidden */
-    width: 50%;
+    width: 35%;
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 35%;
     height: 48px;
     transition: all 0.4s;
     background: linear-gradient( 180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .87));
@@ -164,8 +176,6 @@ ul.list-item-kids-2 {
 
 .drinks-star-rating {
     display: flex;
-    position: absolute;
-    top: 125%;
 }
 
 .fa-star {
@@ -189,10 +199,9 @@ ul.list-item-kids-2 {
 }
 
 .quick-view {
-    position: absolute;
     color: #38d32f;
+    width: 100%;
     font-weight: 600;
-    top: 100%;
 }
 
 .quick-view:hover {

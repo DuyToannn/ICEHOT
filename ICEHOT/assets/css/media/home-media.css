@@ -1,0 +1,58 @@
+                @media (max-width:800px) {
+                    .product__items ul li {
+                        width: 50% !important;
+                    }
+                    .product__items {
+                        padding: 15px 0px !important;
+                    }
+                    .product-name h4 {
+                        font-size: 14px !important;
+                    }
+                    .title-heading h2 {
+                        font-size: 16px !important;
+                    }
+                    .title-heading {
+                        padding-bottom: 1px !important;
+                        background-size: 100px !important;
+                    }
+                    .banner {
+                        margin-top: 60px !important;
+                    }
+                    .banner-2::after {
+                        width: 66%;
+                        height: 20vh;
+                        top: -11%;
+                        right: 0;
+                        background-size: 190px;
+                    }
+                    .recipe::after {
+                        width: 8%;
+                        height: 16vh;
+                        right: -1px;
+                        top: -51px;
+                        background-size: 115%;
+                    }
+                    .promo-items {
+                        padding: 12px;
+                        grid-template-columns: auto auto;
+                        gap: 12px;
+                    }
+                    /*====promos====*/
+                    .promo-img {
+                        width: 100%;
+                        border-top: 2px solid #1a1a1a;
+                    }
+                    /* .promos h3 {
+                        font-size: 25px;
+                    }
+                    .promos h3 span {
+                        font-size: 40px;
+                    } */
+                }
+                
+                @media (max-width: 576px) {
+                    .container,
+                    .container-sm {
+                        max-width: 720px !important;
+                    }
+                }

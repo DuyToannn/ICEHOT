@@ -10,10 +10,6 @@ body {
     margin-top: 80px;
 }
 
-.clr {
-    clear: both;
-}
-
 .product {
     padding-top: 60px;
     float: left;
@@ -56,7 +52,6 @@ body {
 }
 
 .product__items ul {
-    grid-template-columns: auto auto auto auto auto;
     padding-left: 0;
 }
 
@@ -133,6 +128,10 @@ body {
 
 .clr {
     clear: both;
+}
+
+.img-banner {
+    width: 100%;
 }
 
 .banner-2 {
@@ -303,60 +302,86 @@ body {
     background: rgba(0, 0, 0, 0.19);
 }
 
-.promos {}
-
-.promo-items {
-    padding: 12px;
-    grid-template-columns: auto auto auto auto;
-    gap: 12px;
+.promos {
+    background: #000;
+    width: 100%;
+    float: left;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #141a27;
 }
 
-.promo-items a {
+.promo-img {
     position: relative;
     display: flex;
     align-items: center;
-    height: 24vh;
+    /* text-align: center; */
     justify-content: center;
+    z-index: 999;
 }
 
-.promo-items .promo-img-1 {
-    background: url(../img/preview/image\ 24.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: 100% auto;
-}
-
-.promo-items .promo-img-2 {
-    background: url(../img/preview/Mixx\ up\ you\ magic.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: 100% auto;
-}
-
-.promo-items .promo-img-3 {
-    background: url(../img/preview/Icehot\ moments.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: 100% auto;
-}
-
-.promo-items .promo-img-4 {
-    background: url(../img/preview/Co\ hoi\ hop\ tac.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: 100% auto;
-}
-
-.promo-items a::after {
-    content: '';
+.promos h3 {
+    text-align: center;
     position: absolute;
+    font-family: 'Painter';
+    font-size: 30px;
+    color: #fff;
+}
+
+.promos h3 span {
+    font-size: 55px;
+}
+
+.promo-img:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.19);
 }
 
-.promo-items a img {
-    z-index: 99;
+.promo-img-1 {
+    position: relative;
+    float: left;
+    width: 25%;
+    background: url(../img/preview/image\ 24.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-left: 1px solid #141a27;
+    border-right: 1px solid #141a27;
+}
+
+.promo-img-2 {
+    position: relative;
+    float: left;
+    width: 25%;
+    background: url(../img/preview/Mixx\ up\ you\ magic.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-left: 1px solid #141a27;
+    border-right: 1px solid #141a27;
+}
+
+.promo-img-3 {
+    position: relative;
+    float: left;
+    width: 25%;
+    background: url(../img/preview/Icehot\ moments.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-left: 1px solid #141a27;
+    border-right: 1px solid #141a27;
+}
+
+.promo-img-4 {
+    position: relative;
+    float: left;
+    width: 25%;
+    background: url(../img/preview/Co\ hoi\ hop\ tac.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-left: 1px solid #141a27;
+    border-right: 1px solid #141a27;
 }
 
 footer {

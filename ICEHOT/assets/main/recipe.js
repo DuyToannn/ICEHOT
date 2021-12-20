@@ -79,8 +79,6 @@ $(document).ready(function() {
         })
         $(".drinks-star-rating").css({
             "display": "flex",
-            "margin-top": "15px",
-            "position": "unset"
         })
         $(".preview-special-drink").css({
             "display": "none"
@@ -101,7 +99,7 @@ $(document).ready(function() {
             "padding": "30px 20px 65px"
         })
         $(".drink-img img").css({
-            "width": "unset"
+            "width": "100%"
         })
         $(".list-description ul").css({
             "display": "block"
@@ -110,6 +108,7 @@ $(document).ready(function() {
             "display": "flex"
         })
         $(".drink-content").css({
+            "margin": "0",
             "padding-left": "20px"
         })
         $(".drink-content h3").css({
@@ -127,6 +126,9 @@ $(document).ready(function() {
         })
         $(".drink-content p").css({
             "font-size": "16px"
+        })
+        $(".blur::after").css({
+            "bottom": "20%"
         })
         $(".list-product-items").addClass("border-color")
     })

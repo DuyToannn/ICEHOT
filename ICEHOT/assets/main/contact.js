@@ -15,8 +15,3 @@ $(document).on("click", ".naccs .menu div", function() {
         $(".naccs ul").height(listItemHeight + "px");
     }
 });
-
-function map(_la) {
-    var iframe = '<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=' + _la + '&hl=vi-VN;z=16&amp;output=embed"></iframe>';
-    $('.google-map').html(iframe);
-}
