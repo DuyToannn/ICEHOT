@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/headerallpage.css">
     <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/media/blog-media.css">
     <link rel="stylesheet" href="./assets/css/_colors.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/media/footer-media.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>ICEHOT</title>
 </head>
 
@@ -23,11 +26,11 @@
                 <div class="navbar__mobile">
                     <ul>
                         <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Sản phẩm</a></li>
-                        <li><a href="">Công thức</a></li>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="./recipe.html">Công thức</a></li>
                         <li><a href="">Sự kiện</a></li>
-                        <li><a href="">Tin Tức</a></li>
-                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="./blog.html">Tin Tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="header__navbar-left">
@@ -38,6 +41,13 @@
                                 <span></span>
                             </label>
                         </div>
+                        <script>
+                            $(document).ready(function() {
+                                $(".menu__btn").click(function() {
+                                    $('.navbar__mobile').slideToggle();
+                                })
+                            })
+                        </script>
                         <li class="list-navbar-item"><a href="#" class="underline-white">Giới thiệu</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item"><a href="#" class="underline">Rich Products Corp</a></li>
@@ -113,7 +123,7 @@
         <div class="container">
             <div class="d-grid">
                 <div class="list-new-item">
-                    <a href="#">
+                    <a href="./post-1.html">
                         <img src="./assets/img/news/news.jpg" alt="">
                         <h3>ICEHOT CHÀO ĐÓN KEM DAIRY BLEND TÂN BINH DẪN ĐẦU XU HƯỚNG</h3>
                     </a>
@@ -164,7 +174,7 @@
                 </div>
                 <div class="col-5 footer-icon">
                     <div class="d-flex">
-                        <ul class="item-list-icon d-flex justify-content-end">
+                        <ul class="item-list-icon">
                             <li>
                                 <a href=""><img src="./assets/img/iconfb.png" alt=""></a>
                             </li>

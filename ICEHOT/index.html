@@ -29,13 +29,20 @@
                 <div class="navbar__mobile">
                     <ul>
                         <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Sản phẩm</a></li>
-                        <li><a href="">Công thức</a></li>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="./recipe.html">Công thức</a></li>
                         <li><a href="">Sự kiện</a></li>
-                        <li><a href="">Tin Tức</a></li>
-                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="./blog.html">Tin Tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
+                <script>
+                    $(document).ready(function() {
+                        $(".menu__btn").click(function() {
+                            $('.navbar__mobile').slideToggle();
+                        })
+                    })
+                </script>
                 <div class="header__navbar-left">
                     <ul class="list-navbar d-flex">
                         <div class="toggle-mobile">
@@ -44,6 +51,7 @@
                                 <span></span>
                             </label>
                         </div>
+
                         <li class="list-navbar-item"><a href="#" class="underline-white">Giới thiệu</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item"><a href="#" class="underline">Rich Products Corp</a></li>
@@ -112,12 +120,16 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide banner-head">
                 <a href="#" class="img-banner">
-                    <img src="./assets/img/banner/banner 1.webp" alt="">
+                    <div class="viewport-banner">
+                        <img src="./assets/img/banner/banner 1.webp" alt="">
+                    </div>
                 </a>
             </div>
             <div class="swiper-slide banner-head">
                 <a href="#" class="img-banner">
-                    <img src="./assets/img/banner/banner 1.webp     " alt="">
+                    <div class="viewport-banner">
+                        <img src="./assets/img/banner/banner 2.jpg" alt="">
+                    </div>
                 </a>
             </div>
         </div>
@@ -387,7 +399,9 @@
             </div>
         </div>
     </footer>
-    <script src="/assets/main/home.js"></script>
+
+
+    <script src="./assets/main/home.js"></script>
 </body>
 
 </html>

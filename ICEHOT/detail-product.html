@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/swiper.css">
+    <link rel="stylesheet" href="./assets/css/media/footer-media.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -29,11 +30,11 @@
                 <div class="navbar__mobile">
                     <ul>
                         <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Sản phẩm</a></li>
-                        <li><a href="">Công thức</a></li>
+                        <li><a href="./product.html">Sản phẩm</a></li>
+                        <li><a href="./recipe.html">Công thức</a></li>
                         <li><a href="">Sự kiện</a></li>
-                        <li><a href="">Tin Tức</a></li>
-                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="./blog.html">Tin Tức</a></li>
+                        <li><a href="./contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="header__navbar-left">
@@ -44,6 +45,13 @@
                                 <span></span>
                             </label>
                         </div>
+                        <script>
+                            $(document).ready(function() {
+                                $(".menu__btn").click(function() {
+                                    $('.navbar__mobile').slideToggle();
+                                })
+                            })
+                        </script>
                         <li class="list-navbar-item"><a href="#" class="underline-white">Giới thiệu</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item"><a href="#" class="underline">Rich Products Corp</a></li>
@@ -296,7 +304,7 @@
                 </div>
                 <div class="col-5 footer-icon">
                     <div class="d-flex">
-                        <ul class="item-list-icon d-flex justify-content-end">
+                        <ul class="item-list-icon d-flex ">
                             <li>
                                 <a href=""><img src="./assets/img/iconfb.png" alt=""></a>
                             </li>

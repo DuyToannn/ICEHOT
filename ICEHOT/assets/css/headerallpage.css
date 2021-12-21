@@ -266,7 +266,7 @@ body {
 
 @media (max-width:800px) {
     header {
-        height: 65px !important;
+        height: 60px !important;
     }
     .list-navbar-item {
         display: none;
@@ -281,7 +281,7 @@ body {
     .btn-search {
         display: block !important;
         position: absolute;
-        top: 25%;
+        top: 20%;
     }
     .toggle-mobile {
         display: block;
@@ -298,8 +298,8 @@ height: 70px;
         left: -9999px;
     }
     .menu__btn {
-        top: 40%;
-        left: 20px;
+        top: 33%;
+        left: 10px;
     }
     .btn-language img {
         margin-left: unset;
@@ -307,7 +307,31 @@ height: 70px;
         margin-top: unset;
     }
     .search-box {
-        display: none;
+        position: unset;
+        height: 45px;
+        border-radius: unset;
+    }
+    .search-input {
+        position: absolute;
+        right: -43px;
+        top: 68%;
+        background: #fff;
+    }
+    .search-btn {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 25%;
+        top: 17%;
+    }
+    i.fas.fa-search {
+        font-size: 14px;
+    }
+    .search-box:hover>.search-input {
+        width: 500px;
+        padding-left: 45px;
+        height: 45px;
+        text-align: center;
     }
     .list-navbar {
         height: unset;
@@ -318,8 +342,11 @@ height: 70px;
     .header__navbar-right ul {
         justify-content: end;
     }
-    .search-box {
-        right: 27%;
+    .header__navbar-mid {
+        text-align: center;
+    }
+    .header__navbar-mid a img {
+        height: 95%;
     }
     .navbar__mobile {
         padding: 30%;

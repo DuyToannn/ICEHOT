@@ -12,7 +12,7 @@ var swiper = new Swiper(".banner-swiper", {
 
 var swiper = new Swiper(".recipe-slider", {
     slidesPerView: 5,
- 
+
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -24,26 +24,20 @@ var swiper = new Swiper(".recipe-slider", {
     breakpoints: {
         320: {
             slidesPerView: 2,
-       
+
         },
         480: {
             slidesPerView: 2,
-           
+
         },
         900: {
             slidesPerView: 3,
-         
+
         },
         1200: {
             slidesPerView: 5,
-            spaceBetween:-100
+            spaceBetween: -100
         }
 
     }
 });
-
-$(document).ready(function() {
-    $(".menu__btn").click(function() {
-        $('.navbar__mobile').slideToggle();
-    })
-})

@@ -18,12 +18,63 @@
                     .banner {
                         margin-top: 60px !important;
                     }
+                    /*=========Banner 2=========*/
+                    .banner-2 {
+                        min-height: unset;
+                    }
+                    .test {
+                        display: flex;
+                        align-items: center;
+                        height: 50vh;
+                        justify-content: center;
+                        padding-top: unset;
+                        padding-left: 10px;
+                    }
+                    .btn-discover {
+                        font-size: 13px !important;
+                        padding: 5px 24px !important;
+                    }
                     .banner-2::after {
                         width: 66%;
                         height: 20vh;
                         top: -11%;
                         right: 0;
                         background-size: 190px;
+                    }
+                    /*=========Banner 3=========*/
+                    .banner-3 {
+                        min-height: unset;
+                        height: 60vh;
+                        background-position: center;
+                    }
+                    .text-event {
+                        padding: 30px !important;
+                        max-width: 100%;
+                        display: flex;
+                        padding-left: 10px;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    .text-event h2 {
+                        font-size: 18px;
+                    }
+                    .text-event h4 {
+                        font-size: 14px;
+                    }
+                    .gift-users {
+                        display: none;
+                    }
+                    .btn-event {
+                        margin-top: unset;
+                        padding: 7px 24px !important;
+                    }
+                    /*=========Banner 4=========*/
+                    .banner-4 {
+                        min-height: unset;
+                        height: 60vh;
+                        background-position: center;
                     }
                     .recipe::after {
                         width: 8%;

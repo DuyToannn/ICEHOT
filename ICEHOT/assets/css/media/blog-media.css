@@ -1,0 +1,9 @@
+@media (max-width:800px) {
+    .title-name {
+        margin-top: 111px;
+    }
+    .list-news .d-grid {
+        gap: 60px;
+        grid-template-columns: auto;
+    }
+}
