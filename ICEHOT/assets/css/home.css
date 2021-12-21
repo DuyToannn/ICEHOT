@@ -199,10 +199,11 @@ body {
     content: '';
     position: absolute;
     background: url(../img/pattern/patterndot.png) no-repeat;
-    width: 15%;
+    width: 20%;
     height: 26vh;
-    left: -115px;
-    top: 162px;
+    left: -131px;
+    top: 225px;
+    z-index: 9;
 }
 
 .recipe::after {
@@ -210,9 +211,11 @@ body {
     position: absolute;
     background: url(../img/pattern/patterncircleblue.png) no-repeat;
     width: 6%;
-    height: 26vh;
+    height: 33vh;
     right: 0;
     top: 0;
+    z-index: 9;
+
 }
 
 .banner-3 {
