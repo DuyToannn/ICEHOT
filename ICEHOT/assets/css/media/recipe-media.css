@@ -1,6 +1,6 @@
 @media (max-width:800px) {
     .text-product {
-        margin-top: 65px;
+        margin-top: 60px;
     }
     .text-product .container {
         padding: 0;
@@ -27,13 +27,18 @@
         margin-bottom: 5px;
     }
     .items-product {
+        flex-direction: column;
         padding: 10px !important;
     }
     .preview-special-drink {
         display: none !important;
     }
     .items-product a {
-        width: 20%;
+        width: 100%;
+    }
+    .drink-content {
+        padding-left: 0;
+        margin-top: 15px;
     }
     .drink-content h3 {
         font-size: 1rem !important;
@@ -65,8 +70,6 @@
         top: 0px;
     }
     .special-drink-entity {
-        transform: translateX(-25vw);
-        width: calc(136.33% + 15px);
         display: flex;
         justify-content: center;
         margin-top: 20px;
@@ -76,10 +79,12 @@
         margin: 2px;
     }
     .make-drink {
-        transform: translateX(-25vw);
-        width: calc(136.33% + 15px);
         display: flex;
         justify-content: center;
+        width: 100%;
+    }
+    .close-quick {
+        width: 100%;
     }
     .lists-all-product {
         grid-template-columns: auto auto !important;

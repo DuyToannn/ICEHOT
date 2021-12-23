@@ -19,7 +19,6 @@
     background-image: url(https://www.richs.com.vn/statics/bg-img.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
     background-size: cover;
 }
 
@@ -113,4 +112,33 @@ blockquote img {
 
 hr {
     margin-top: 60px !important;
+}
+
+@media (max-width:800px) {
+    .title-name {
+        margin-top: 60px;
+    }
+    .question-quiz h2 {
+        font-size: 20px;
+    }
+    .answer {
+        text-align: center;
+        width: 50%;
+        float: left;
+        cursor: pointer;
+    }
+    .answer span {
+        font-size: 14px;
+    }
+    blockquote img {
+        width: 100%;
+    }
+    .bq>div {
+        float: unset;
+        width: 100%;
+    }
+    .bq div p {
+        margin-top: unset;
+        padding: 15px;
+    }
 }

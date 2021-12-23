@@ -157,3 +157,33 @@ body::after {
 .list li.active a {
     color: var(--color-red);
 }
+
+hr:not([size]) {
+    height: 3px !important;
+    background: #000;
+    opacity: unset;
+}
+
+@media (max-width:800px) {
+    body::after {
+        display: none;
+    }
+    .title-product p {
+        display: none;
+    }
+    .product-main {
+        flex-direction: column;
+    }
+    .list {
+        padding: 0 20px;
+    }
+    .product-list {
+        grid-template-columns: auto;
+    }
+    .product-item {
+        width: 100%;
+    }
+    .product-list-item a h3 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,45 @@
+@media (max-width:800px) {
+    .img-product {
+        margin-top: 60px;
+    }
+    .img-product img {
+        height: 50vh;
+        object-fit: cover;
+    }
+    .preview-product h1::before {
+        display: none;
+    }
+    .preview-product h1::after {
+        display: none;
+    }
+    .preview-product h1 {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    .inf-detail-product {
+        font-size: 18px;
+        padding: 0 25px;
+    }
+    .inf-product {
+        grid-template-columns: auto;
+    }
+    .inf-product-item {
+        padding: 0 14px;
+    }
+    .inf-product-item p {
+        font-size: 16px;
+    }
+    .inf-product-item h2 {
+        text-align: left;
+        border-bottom: 4px solid;
+        padding: 0 0 9px;
+    }
+    .name-product-involve,
+    .recipe-text {
+        font-size: 16px;
+    }
+    .product-involve h3,
+    .slider-product-more h3 {
+        font-size: 18px;
+    }
+}

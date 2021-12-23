@@ -36,3 +36,9 @@
     color: #000;
     margin-top: 20px;
 }
+
+@media (max-width:800px) {
+    .list-quiz .d-grid {
+        grid-template-columns: auto;
+    }
+}
