@@ -5,6 +5,10 @@
     .text-product .container {
         padding: 0;
     }
+
+    .banner-product {
+        height: 20vh;
+    }
     .name-product {
         margin-top: unset;
         padding: 20px;
@@ -88,5 +92,11 @@
     }
     .lists-all-product {
         grid-template-columns: auto auto !important;
+    }
+    .change-to-list{
+        display: none;
+    }
+    .change-to-column{
+        display: none;
     }
 }

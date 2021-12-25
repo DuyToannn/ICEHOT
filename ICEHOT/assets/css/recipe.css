@@ -11,6 +11,14 @@ body {
     position: relative;
 }
 
+.banner-product {
+    background-image: url(https://images.absolutdrinks.com/ingredient-images/Raw/Absolut/cfe7b687-3ae3-4c63-a27c-dce0fd11b207.jpg?imwidth=900);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .banner-product img {
     width: 100%;
 }

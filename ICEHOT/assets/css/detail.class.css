@@ -20,6 +20,20 @@
             td {
                 padding: 8px 80px 8px 0 !important;
             }
+
+            input {
+                padding: 0 15px;
+            }
+
+            #modal-apply-cv{
+                padding: unset !important;
+            }
+            .form-check-input {
+                padding: unset !important;
+            }
+            .form-check {
+                padding-left: unset !important;
+            }
             
             .page-class {
                 margin-top: 80px;
@@ -52,6 +66,9 @@
                 .dialog-actions {
                     margin-bottom: unset;
                     margin-top: 15px !important;
+                }
+                .form-check-label {
+                    font-size: 12px;
                 }
             }
             
