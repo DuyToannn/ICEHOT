@@ -49,6 +49,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $(".change-to-column").click(function() {
+        $(".change-to-list").css({
+            "opacity": "unset"
+        })
+        $(".change-to-column").css({
+            "opacity": ".7"
+        })
         $(".lists-all-product").css({
             "display": "grid",
             "grid-template-columns": "auto auto auto",
@@ -91,6 +97,12 @@ $(document).ready(function() {
 })
 $(document).ready(function() {
     $(".change-to-list").click(function() {
+        $(".change-to-list").css({
+            "opacity": ".7"
+        })
+        $(".change-to-column").css({
+            "opacity": "unset"
+        })
         $(".lists-all-product").css({
             "display": "block",
         })

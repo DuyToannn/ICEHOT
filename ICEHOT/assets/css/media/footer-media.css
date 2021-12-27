@@ -29,4 +29,7 @@
     .copyright {
         margin-top: 0 !important;
     }
+    .mess-fb {
+        display: none;
+    }
 }

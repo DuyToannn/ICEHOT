@@ -81,3 +81,13 @@ footer {
     display: flex;
     justify-content: end;
 }
+
+.mess-fb {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    text-align: right;
+    padding: 13px 20px;
+
+}
