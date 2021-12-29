@@ -199,10 +199,19 @@
                         </li>
                         <div class="search-box">
                             <input class="search-input" type="text" name="" placeholder="Kem béo, Siro, Công thức trà ...">
-                            <a href="javascipt:void" class="search-btn">
+                            <a href="javascript:void(0)" class="search-btn">
                                 <i class="fas fa-search"></i>
                             </a>
                         </div>
+
+                        <script>
+                            $(document).ready(function(){{
+                                $(".search-btn").click(function(){
+                                    $(".search-input").fadeToggle();
+                                });
+                            }})
+
+                        </script>
                     </ul>
 
                 </div>

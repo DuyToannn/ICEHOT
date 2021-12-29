@@ -202,10 +202,19 @@
                         </li>
                         <div class="search-box">
                             <input class="search-input" type="text" name="" placeholder="Kem béo, Siro, Công thức trà ...">
-                            <a href="javascipt:void" class="search-btn">
+                            <a href="javascript:void(0)" class="search-btn">
                                 <i class="fas fa-search"></i>
                             </a>
                         </div>
+
+                        <script>
+                            $(document).ready(function(){{
+                                $(".search-btn").click(function(){
+                                    $(".search-input").fadeToggle();
+                                });
+                            }})
+
+                        </script>
                     </ul>
 
                 </div>
@@ -222,12 +231,13 @@
                         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide-large">
+                                    <a href="#video-pre"><i class="fas fa-play-circle"></i></a>
                                     <img src="./assets/img/Kem/Kem béo thực vật.png" />
                                 </div>
                                 <div class="swiper-slide slide-large">
                                     <img src="./assets/img/Kem/Kem béo thực vật.png" />
                                 </div>
-                                <div class="swiper-slide slide-large video-pre">
+                                <div class="swiper-slide slide-large video-pre " id="video-pre">
                                     <iframe src="https://www.youtube.com/embed/r0teFe5S6ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>

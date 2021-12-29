@@ -70,10 +70,25 @@
     object-fit: cover;
 }
 
+.slide-large {
+    position: relative;
+}
+
+.slide-large a {
+    position: absolute;
+}
+
+.fa-play-circle{
+    font-size: 111px;
+    opacity: .7;
+    color: dimgray !important;
+}
+
 .slide-large iframe {
     width: 100%;
     height: 100vh;
 }
+
 
 .slide-small {
     width: 70px !important;

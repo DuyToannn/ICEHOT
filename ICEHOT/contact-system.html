@@ -188,7 +188,7 @@
                         </li>
                         <li class="list-navbar-item"><a href="./contact.html" class="underline-white">Liên hệ</a>
                             <ul class="sub-menu">
-                                <li class="sub-menu-item"><a href="./contact-system.html" class="underline">Hệ thống phân phối</a></li>
+                                <li class="sub-menu-item"><a href="#" class="underline">Hệ thống phân phối</a></li>
                                 <li class="sub-menu-item"><a href="#" class="underline">Địa chỉ văn phòng, nhà máy</a>
                                 </li>
                                 <li class="sub-menu-item"><a href="./class_icehot.html" class="underline">Đăng ký lớp học</a></li>
@@ -200,10 +200,19 @@
                         </li>
                         <div class="search-box">
                             <input class="search-input" type="text" name="" placeholder="Kem béo, Siro, Công thức trà ...">
-                            <a href="#" class="search-btn">
+                            <a href="javascript:void(0)" class="search-btn">
                                 <i class="fas fa-search"></i>
                             </a>
                         </div>
+
+                        <script>
+                            $(document).ready(function(){{
+                                $(".search-btn").click(function(){
+                                    $(".search-input").fadeToggle();
+                                });
+                            }})
+
+                        </script>
                     </ul>
 
                 </div>

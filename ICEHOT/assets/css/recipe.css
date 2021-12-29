@@ -122,7 +122,7 @@ ul.list-item-kids-2 {
 .items-product {
     position: relative;
     display: flex;
-    padding: 30px 20px 65px;
+    padding: 30px 20px 40px;
     transition: 0.4s;
 }
 
@@ -280,4 +280,11 @@ ul.list-item-kids-2 {
     border: none;
     margin-top: 10px;
     background: #fff;
+}
+
+.recipe::after{
+    display: none;
+}
+.recipe::before{
+    display: none;
 }
