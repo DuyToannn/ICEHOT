@@ -344,6 +344,7 @@ body {
         position: absolute;
         right: -12px;
         top: 70%;
+        width: 426px;
         /* height: 41px; */
         box-shadow: rgb(0 0 0 / 35%) 0px 1px 6px 0px;
         background: rgb(255, 255, 255);
