@@ -7,7 +7,7 @@ body {
 }
 
 .banner {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .product {
@@ -20,7 +20,8 @@ body {
 .viewport-banner {
     position: relative;
     width: 100%;
-    padding-top: 56.25%;
+    height: calc(100vh - 500px);
+
     overflow: hidden;
     transition: 0.4s;
 }

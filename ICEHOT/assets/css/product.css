@@ -2,7 +2,7 @@ body {
     position: relative;
 }
 
-body::before {
+/* body::before {
     content: '';
     position: absolute;
     background: url(../img/pattern/patterndot.png) no-repeat;
@@ -21,7 +21,7 @@ body::after {
     top: -151px;
     right: 120px;
     z-index: -1;
-}
+} */
 
 .layout {
     margin-top: 80px;
@@ -50,11 +50,24 @@ body::after {
 }
 
 .product-list {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
-.product-item {
-    width: 130%;
+
+
+.product-list-item {
+    padding: 50px 0;
+}
+
+
+.product-list-item a img {
+    max-width: 100%;
+    transition: 0.4s;
+    transform: scale(1.5);
+}
+.product-list a:hover img {
+    transition: 0.4s;
+    transform: scale(1.53);
 }
 
 .sticker-new {
@@ -75,21 +88,13 @@ body::after {
     z-index: 2;
 }
 
-.product-list-item {
-    padding: 15px;
-}
-
-.product-list-item a img {
-    max-width: 100%;
-    transition: 0.4s;
-}
 
 .product-list-item a h3 {
     text-align: center;
     font-size: 20px;
     color: #000;
     font-family: 'Gotham Bold';
-    margin-top: 10px;
+    margin-top: 85px;
 }
 
 .product-list-item a:hover {
@@ -116,13 +121,11 @@ body::after {
     transition: 0.4s;
 }
 
-.product-list a:hover img {
-    transition: 0.4s;
-    transform: scale(1.05);
-}
+
 
 .product-main {
     display: flex;
+    flex-direction: column;
 }
 
 .product-filter {

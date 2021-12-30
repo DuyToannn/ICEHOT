@@ -176,4 +176,4 @@ var swiper = new Swiper(".recipe-slider", {
         }
 
     }
-});
+}); 

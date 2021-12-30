@@ -41,3 +41,9 @@ var swiper = new Swiper(".recipe-slider", {
 
     }
 });
+
+// $('.sub-menu a').click(function () {
+//     $('.sub-menu a').removeClass('.current_page_item');
+//     $(this).addClass('.current_page_item');
+
+// });

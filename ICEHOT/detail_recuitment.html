@@ -37,7 +37,8 @@
                             <div class="list-group-item-content ans">
                                 <ul class="sub-menu-mobile">
                                     <li class="sub-menu-item-mb"><a href="./richcorp.html">Rich Products Corp</a></li>
-                                    <li class="sub-menu-item-mb"><a href="./richproduct.html">Rich Products Vietnam</a></li>
+                                    <li class="sub-menu-item-mb"><a href="./richproduct.html">Rich Products Vietnam</a>
+                                    </li>
                                     <li class="sub-menu-item-mb"><a href="./icehotbrand.html">ICEHOT Brand</a></li>
                                 </ul>
                             </div>
@@ -63,10 +64,11 @@
                             <div class="list-group-item-content ans">
                                 <ul class="sub-menu-moblie">
                                     <li class="sub-menu-item"><a href="#" class="underline">Tea
-                                    </a></li>
+                                        </a></li>
                                     <li class="sub-menu-item"><a href="#" class="underline">Cafe</a></li>
                                     <li class="sub-menu-item"><a href="#" class="underline">Cocktail, Mocktail</a></li>
-                                    <li class="sub-menu-item"><a href="#" class="underline">Ice blended, Smoothie</a></li>
+                                    <li class="sub-menu-item"><a href="#" class="underline">Ice blended, Smoothie</a>
+                                    </li>
                                     <li class="sub-menu-item"><a href="#" class="underline">Dessert</a></li>
                                 </ul>
                             </div>
@@ -106,19 +108,22 @@
                             <div class="list-group-item-content ans">
                                 <ul class="sub-menu-moblie">
                                     <li class="sub-menu-item"><a href="#" class="underline">Hệ thống phân phối</a></li>
-                                    <li class="sub-menu-item"><a href="#" class="underline">Địa chỉ văn phòng, nhà máy</a>
+                                    <li class="sub-menu-item"><a href="#" class="underline">Địa chỉ văn phòng, nhà
+                                            máy</a>
                                     </li>
-                                    <li class="sub-menu-item"><a href="./class_icehot.html" class="underline">Đăng ký lớp học</a></li>
-                                    <li class="sub-menu-item"><a href="./recruitment.html" class="underline">Tuyển dụng</a></li>
+                                    <li class="sub-menu-item"><a href="./class_icehot.html" class="underline">Đăng ký
+                                            lớp học</a></li>
+                                    <li class="sub-menu-item"><a href="./recruitment.html" class="underline">Tuyển
+                                            dụng</a></li>
                                 </ul>
                             </div>
                         </li>
 
                     </ul>
                     <script>
-                        $(function() {
+                        $(function () {
                             var items = $('.result_location');
-                            items.click(function() {
+                            items.click(function () {
                                 $(this).find('.ans').slideToggle(400);
                                 $(this).find('.list-group-item-heading').toggleClass('active');
                                 $(this).siblings().find('.ans').slideUp(400);
@@ -128,8 +133,8 @@
                     </script>
                 </div>
                 <script>
-                    $(document).ready(function() {
-                        $(".menu__btn").click(function() {
+                    $(document).ready(function () {
+                        $(".menu__btn").click(function () {
                             let display = $('.navbar__mobile').css('display');
                             if (display != 'block') $(".search-box").fadeOut(0)
                             else $('.search-box').fadeIn(0)
@@ -144,8 +149,8 @@
                             <span></span>
                         </label>
                     </div>
+              
                     <ul class="list-navbar d-flex">
-
                         <li class="list-navbar-item"><a href="#" class="underline-white">Giới thiệu</a>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item"><a href="#" class="underline">Rich Products Corp</a></li>
@@ -169,9 +174,12 @@
                             </ul>
                         </li>
                     </ul>
+    
                 </div>
                 <div class="header__navbar-mid">
-                    <a href="./index.html"><img src="./assets/img/logoicehot.png" alt="" class="img-fluid"></a>
+                    <a href="./index.html">
+                        <img src="./assets/img/logoicehot.png" alt="" class="img-fluid" style="height: 70px;">
+                    </a>
                 </div>
                 <div class="header__navbar-right">
                     <ul class="list-navbar d-flex">
@@ -190,7 +198,8 @@
                                 <li class="sub-menu-item"><a href="#" class="underline">Hệ thống phân phối</a></li>
                                 <li class="sub-menu-item"><a href="#" class="underline">Địa chỉ văn phòng, nhà máy</a>
                                 </li>
-                                <li class="sub-menu-item"><a href="./class_icehot.html" class="underline">Đăng ký lớp học</a></li>
+                                <li class="sub-menu-item"><a href="./class_icehot.html" class="underline">Đăng ký lớp
+                                        học</a></li>
                                 <li class="sub-menu-item"><a href="./recruitment" class="underline">Tuyển dụng</a></li>
                             </ul>
                         </li>
@@ -198,18 +207,21 @@
                             <a href="#" class="btn-language"><img src="./assets/img/language.png" alt=""></a>
                         </li>
                         <div class="search-box">
-                            <input class="search-input" type="text" name="" placeholder="Kem béo, Siro, Công thức trà ...">
+                            <input class="search-input" type="text" name=""
+                                placeholder="Kem béo, Siro, Công thức trà ...">
                             <a href="javascript:void(0)" class="search-btn">
                                 <i class="fas fa-search"></i>
                             </a>
                         </div>
 
                         <script>
-                            $(document).ready(function(){{
-                                $(".search-btn").click(function(){
-                                    $(".search-input").fadeToggle();
-                                });
-                            }})
+                            $(document).ready(function () {
+                                {
+                                    $(".search-btn").click(function () {
+                                        $(".search-input").fadeToggle();
+                                    });
+                                }
+                            })
 
                         </script>
                     </ul>
