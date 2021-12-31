@@ -51,6 +51,7 @@ body::after {
 
 .product-list {
     grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
 }
 
 
@@ -80,8 +81,8 @@ body::after {
     background: url(../img/4x_new.png);
     width: 80px;
     height: 80px;
-    top: 12%;
-    right: 22%;
+    top: 10%;
+    right: 14%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -94,7 +95,8 @@ body::after {
     font-size: 20px;
     color: #000;
     font-family: 'Gotham Bold';
-    margin-top: 85px;
+    margin-top: 50px;
+    z-index: 99;
 }
 
 .product-list-item a:hover {
@@ -110,6 +112,11 @@ body::after {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     margin-bottom: 1rem;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-list a {
@@ -140,11 +147,14 @@ body::after {
 
 .list {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 .list li {
     padding: 10px 0px;
-    border-top: 1px solid #dee2e6;
+
 }
 
 .list li a {

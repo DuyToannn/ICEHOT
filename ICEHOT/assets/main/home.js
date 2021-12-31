@@ -1,3 +1,17 @@
+var swiper = new Swiper(".product-highlight", {
+    slidesPerView: 5,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
+
+
+
+
+
 var swiper = new Swiper(".banner-swiper", {
     pagination: {
         el: ".swiper-pagination",

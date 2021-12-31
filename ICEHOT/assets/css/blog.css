@@ -36,3 +36,7 @@
     color: #000;
     margin-top: 20px;
 }
+
+.title-2, .title-3 {
+    margin-top: 60px !important;
+}

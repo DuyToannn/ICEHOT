@@ -107,6 +107,7 @@ justify-content: center;
     transition: all .5s ease;
 }
 
+
 .list-navbar-item::after {
     content: '';
     height: 90%;
@@ -211,10 +212,12 @@ justify-content: center;
     font-family: 'Gotham Book';
     font-weight: 600;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
 }
-
+.sub-menu-item a {
+    font-size: 14px !important;
+}
 .underline,
 .underline-white {
     position: relative;

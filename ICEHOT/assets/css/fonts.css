@@ -17,3 +17,14 @@
     font-family: 'Painter';
     src: url(../fonts/Gotham/SVN-Sign\ Painter\ House\ Script.otf);
 }
+
+@font-face {
+    font-family: 'DIN-black';
+    src: url(../fonts/DIN/DIN-Black.woff2);
+}
+
+@font-face {
+    font-family: 'DIN-Bold';
+    src: url(../fonts/DIN/DIN-Condensed-Bold.woff2);
+}
+

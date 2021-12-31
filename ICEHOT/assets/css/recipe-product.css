@@ -1,0 +1,76 @@
+.recipe-new {
+    margin-top: 120px;
+}
+
+.recipe-img {
+    position: relative;
+    width: 100%;
+    padding-top:100%;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.recipe-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    transition: 0.4s;
+}
+
+.all-recipe-new {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.all-recipe-new a {
+    float: left;
+    width: 35%;
+}
+
+.text-recipe {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-recipe p {
+
+    color: var(--color-red
+    );
+    font-size: 20px !important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    margin-top: -30px !important;
+    margin-bottom: 0 !important;
+    z-index: 9;
+    /* text-align: center !important; */
+    margin-left: auto!important;
+    margin-right: auto!important;
+    background: #fff;
+    font-weight: 600;
+}
+
+.text-recipe h3 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 23px;
+    color: var(--color-blue);
+    font-family: 'Gotham Bold' !important;
+}
+
+
+.drink-list {
+    margin-top: 130px;
+
+}
+
+
