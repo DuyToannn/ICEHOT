@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/recipe-group-product.css">
     <link rel="stylesheet" href="./assets/css/recipe.css">
     <link rel="stylesheet" href="./assets/css/media/recipe-media.css">
     <link rel="stylesheet" href="./assets/css/headerallpage.css">
@@ -16,8 +17,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/media/footer-media.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>ICEHOT</title>
@@ -152,7 +155,7 @@
                             <span></span>
                         </label>
                     </div>
-              
+
                     <ul class="list-navbar d-flex">
                         <li class="list-navbar-item"><a href="#" class="underline-white">Giới thiệu</a>
                             <ul class="sub-menu">
@@ -177,7 +180,7 @@
                             </ul>
                         </li>
                     </ul>
-    
+
                 </div>
                 <div class="header__navbar-mid">
                     <a href="./index.html">
@@ -210,9 +213,7 @@
                             <a href="#" class="btn-language"><img src="./assets/img/language.png" alt=""></a>
                         </li>
                         <div class="search-box">
-                            <input class="search-input" type="text" name=""
-                                placeholder="Kem béo, Siro, Công thức trà ...">
-                            <a href="javascript:void(0)" class="search-btn">
+                            <a href="#search-recipe" class="search-btn" scroll="no">
                                 <i class="fas fa-search"></i>
                             </a>
                         </div>
@@ -225,7 +226,6 @@
                                     });
                                 }
                             })
-
                         </script>
                     </ul>
 
@@ -233,277 +233,66 @@
             </div>
         </div>
     </header>
-    <section class="text-product">
-        <div class="banner-product"></div>
-        <div class="container">
-            
-            <div class="name-product mx-auto">
-                <h1>KEM BÉO THỰC VẬT</h1>
-                <p>Kem béo thực vật là một sản phẩm đa năng, được khách hàng ưa chuộng bởi vị kem thơm béo đặc biệt, dễ dàng kết hợp với nhiều loại công thức khác nhau.</p>
+
+    <section class="swiper banner banner-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide banner-head">
+                <a href="#" class="img-banner">
+                    <div class="viewport-banner">
+                        <img src="./assets/img/banner/banner 1.webp" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-slide banner-head">
+                <a href="#" class="img-banner">
+                    <div class="viewport-banner">
+                        <img src="./assets/img/banner/banner 2.jpg" alt="">
+                    </div>
+                </a>
             </div>
         </div>
     </section>
-
-    <section class="drink-list">
+    <div class="clr"></div>
+    <section class="recipe-new">
         <div class="container">
-            <div class="list-navigation d-flex justify-content-between">
-                <div class="navi-left">
-                    <a href="#"><img src="https://www.absolutdrinks.com/icons/filter.svg" alt="" width="9" height="10"></a>
-                    <span>FILTER</span>
-                </div>
-                <div class="navi-right">
-                    <a href="#"><img src="https://www.absolutdrinks.com/icons/sort.svg" alt="" width="9" height="10"></a>
-                    <label for="cars">Sort By: </label>
-                    <select name="cars" id="cars">
-                        <option value="Relevance">Relevance</option>
-                        <option value="Popularity">Popularity</option>
-                        <option value="A-Z">A-Z</option>
-                    </select>
-                    <button class="change-to-list">
-                        <img src="./assets/img/product-page/list.svg" alt="">
-                    </button>
-                    <button class="change-to-column">
-                        <img src="./assets/img/product-page/list-column.svg" alt="">
-                    </button>
-                </div>
+            <div class="input-search" >
+                <input type="search" placeholder="Search" id="search-recipe">
+                <span><i class="fas fa-search"></i></span>
             </div>
-            <div class="filter-recipe d-flex">
-                <div class="drink-list-filter">
-                    <ul>
-                    
-                        <li class="border-top list-item list-item-1">
-                            <a href="javascript:void(0)">
-                                <span>Glass Type</span>
-                                <i class="fas fa-chevron-down chevron-down-1 down"></i>
-                            </a>
-                            <ul class="list-item-kids-1">
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <div class="">
-                                        <input type="checkbox">
-                                        <label for="">Highball glass</label>
-                                    </div>
-                                    <span>2</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <div class="">
-                                        <input type="checkbox">
-                                        <label for="">Highball glass</label>
-                                    </div>
-                                    <span>3</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <div class="">
-                                        <input type="checkbox">
-                                        <label for="">Highball glass</label>
-                                    </div>
-                                    <span>1</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="border-top list-item list-item-2">
-                            <a href="javascript:void(0)">
-                                <span>Color</span>
-                                <i class="fas fa-chevron-down chevron-down-2 down"></i>
-                            </a>
-                            <ul class="list-item-kids-2 ">
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <div class="">
-                                        <input type="checkbox">
-                                        <label for="">Highball glass</label>
-                                    </div>
-                                    <span>2</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <div class="">
-                                        <input type="checkbox">
-                                        <label for="">Highball glass</label>
-                                    </div>
-                                    <span>3</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <div class="">
-                                        <input type="checkbox">
-                                        <label for="">Highball glass</label>
-                                    </div>
-                                    <span>1</span>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="lists-all-product">
-                    <div class="list-product">
-                        <div class="list-product-items border-color border-top">
-                            <div class="items-product">
-                                <a href="./detail-recipe.html">
-                                    <div class="drink-img"><img src="./assets/img/product-page/drinks-right-product.webp" alt=""></div>
-                                    <div class="drink-content">
-                                        <h3>Grapefruit Cooler</h3>
-                                        <p>Absolut Grapefruit, White Wine, Lemon Juice, Agave Nectar, Grape</p>
-                                        <div class="text-more">
-                                            <div class="list-description">
-                                                <ul>
-                                                    <li>Ice Cubes</li>
-                                                    <li>1½ Parts Absolut Grapefruit</li>
-                                                    <li>2⅔ Parts White Wine</li>
-                                                    <li>6 Whole Grapes</li>
-                                                    <!-- <span class="blur"></span> -->
-                                                </ul>
-                                                <a href="javascript:void(0)" class="quick-view">Xem thêm</a>
-                                                <ul class="drinks-star-rating">
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                </ul>
-
-
-                                                <div class="preview-special-drink">
-                                                    <button class="btn btn-primary">Rocks Glass</button>
-                                                    <button class="btn btn-primary">Clear</button>
-                                                    <button class="btn btn-primary">Absolut Lime</button>
-                                                </div>
-                                                <div class="show-quick-view">
-                                                    <h3>How to make</h3>
-                                                    <p>Muddle grapes in a shaker. Add lemon juice, agave nectar, white wine, Absolut Grapefruit and ice cubes. Shake and strain into a highball glass. Garnish with grapes.</p>
-                                                    <div class="special-drink-entity">
-                                                        <button class="btn btn-primary">Highball Glass</button>
-                                                        <button class="btn btn-primary">Vacation Drinks</button>
-                                                        <button class="btn btn-primary">Absolut Grapefruit</button>
-                                                    </div>
-                                                    <button class="make-drink">Make this drink</button>
-                                                    <button class="close-quick">Close Quick View</button>
-                                                    <ul class="drinks-star-ratings d-flex">
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+            <div class="all-recipe-new">
+                <a href="#">
+                    <div class="recipe-img">
+                        <img src="./assets/img/recipe/recipe-new-1.jpg" alt="">
                     </div>
-                    <div class="list-product">
-                        <div class="list-product-items border-color">
-                            <div class="items-product">
-                                <a href="./detail-product.html">
-                                    <div class="drink-img"><img src="./assets/img/product-page/drinks-right-product.webp" alt=""></div>
-                                    <div class="drink-content">
-                                        <h3>Grapefruit Cooler</h3>
-                                        <p>Absolut Grapefruit, White Wine, Lemon Juice, Agave Nectar, Grape</p>
-                                        <div class="text-more">
-                                            <div class="list-description">
-                                                <ul>
-                                                    <li>Ice Cubes</li>
-                                                    <li>1½ Parts Absolut Grapefruit</li>
-                                                    <li>2⅔ Parts White Wine</li>
-                                                    <li>6 Whole Grapes</li>
-                                                    <!-- <span class="blur"></span> -->
-                                                </ul>
-                                                <a href="javascript:void(0)" class="quick-view">Xem thêm</a>
-                                                <ul class="drinks-star-rating">
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                </ul>
-
-
-                                                <div class="preview-special-drink">
-                                                    <button class="btn btn-primary">Rocks Glass</button>
-                                                    <button class="btn btn-primary">Clear</button>
-                                                    <button class="btn btn-primary">Absolut Lime</button>
-                                                </div>
-                                                <div class="show-quick-view">
-                                                    <h3>How to make</h3>
-                                                    <p>Muddle grapes in a shaker. Add lemon juice, agave nectar, white wine, Absolut Grapefruit and ice cubes. Shake and strain into a highball glass. Garnish with grapes.</p>
-                                                    <div class="special-drink-entity">
-                                                        <button class="btn btn-primary">Highball Glass</button>
-                                                        <button class="btn btn-primary">Vacation Drinks</button>
-                                                        <button class="btn btn-primary">Absolut Grapefruit</button>
-                                                    </div>
-                                                    <button class="make-drink">Make this drink</button>
-                                                    <button class="close-quick">Close Quick View</button>
-                                                    <ul class="drinks-star-ratings d-flex">
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="text-recipe">
+                        <p>Drink of the day</p>
+                        <h3>Cold Brew Grapefruit</h3>
                     </div>
-                    <div class="list-product">
-                        <div class="list-product-items border-color">
-                            <div class="items-product">
-                                <a href="./detail-product.html">
-                                    <div class="drink-img"><img src="./assets/img/product-page/drinks-right-product.webp" alt=""></div>
-                                    <div class="drink-content">
-                                        <h3>Grapefruit Cooler</h3>
-                                        <p>Absolut Grapefruit, White Wine, Lemon Juice, Agave Nectar, Grape</p>
-                                        <div class="text-more">
-                                            <div class="list-description">
-                                                <ul>
-                                                    <li>Ice Cubes</li>
-                                                    <li>1½ Parts Absolut Grapefruit</li>
-                                                    <li>2⅔ Parts White Wine</li>
-                                                    <li>6 Whole Grapes</li>
-                                                    <!-- <span class="blur"></span> -->
-                                                </ul>
-                                                <a href="javascript:void(0)" class="quick-view">Xem thêm</a>
-                                                <ul class="drinks-star-rating">
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                </ul>
+                </a>
 
-
-                                                <div class="preview-special-drink">
-                                                    <button class="btn btn-primary">Rocks Glass</button>
-                                                    <button class="btn btn-primary">Clear</button>
-                                                    <button class="btn btn-primary">Absolut Lime</button>
-                                                </div>
-                                                <div class="show-quick-view">
-                                                    <h3>How to make</h3>
-                                                    <p>Muddle grapes in a shaker. Add lemon juice, agave nectar, white wine, Absolut Grapefruit and ice cubes. Shake and strain into a highball glass. Garnish with grapes.</p>
-                                                    <div class="special-drink-entity">
-                                                        <button class="btn btn-primary">Highball Glass</button>
-                                                        <button class="btn btn-primary">Vacation Drinks</button>
-                                                        <button class="btn btn-primary">Absolut Grapefruit</button>
-                                                    </div>
-                                                    <button class="make-drink">Make this drink</button>
-                                                    <button class="close-quick">Close Quick View</button>
-                                                    <ul class="drinks-star-ratings d-flex">
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                        <li><a href=""><i class="fas fa-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                <a href="#">
+                    <div class="recipe-img">
+                        <img src="./assets/img/recipe/recipe-new-2.jpg" alt="">
                     </div>
-                </div>
+                    <div class="text-recipe">
+                        <p>Drink of the day</p>
+                        <h3>Cafe Trứng</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="clr"></div>
+    <section class="icon-icehot">
+        <div class="container">
+            <div class="icon-items">
+                <ul>
+                    <li><img src="./assets/img/icon//icontea.png" alt=""></li>
+                    <li><img src="./assets/img/icon/iconcafe.png" alt=""></li>
+                    <li><img src="./assets/img/icon/iconsinhtodaxay.png" alt=""></li>
+                    <li><img src="./assets/img/icon//icon kem.png" alt=""></li>
+                    <li><img src="./assets/img/icon/iconkhac.png" alt=""></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -511,14 +300,14 @@
         <div class="container">
             <div class="product__main">
                 <div class="title-heading">
-                    <h2>Công thức xu hướng</h2>
+                    <h2>Công thức yêu thích</h2>
                 </div>
                 <div class="swiper recipe-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#" class="hover-scale">
                                 <div class="product-recipe">
-                                    <img src="./assets/img/recipe/recipe1.png" alt="">
+                                    <img src="https://images.absolutdrinks.com/ingredient-images/Raw/Absolut/636ca162-ab49-4578-9717-8f05788a4fa0.jpg?imwidth=175" alt="">
                                     <h4>Công thức 1</h4>
                                 </div>
                             </a>
@@ -526,7 +315,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="hover-scale">
                                 <div class="product-recipe">
-                                    <img src="./assets/img/recipe/recipe2.png" alt="">
+                                    <img src="https://images.absolutdrinks.com/ingredient-images/Raw/Absolut/08358f78-cba3-4ec0-9fb6-43d7e919ca43.jpg?imwidth=175" alt="">
                                     <h4>Công thức 1</h4>
                                 </div>
                             </a>
@@ -534,7 +323,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="hover-scale">
                                 <div class="product-recipe">
-                                    <img src="./assets/img/recipe/recipe3.png" alt="">
+                                    <img src="https://images.absolutdrinks.com/ingredient-images/Raw/Absolut/e9c63575-be76-4b5f-8597-fde57e865e03.jpg?imwidth=175" alt="">
                                     <h4>Công thức 1</h4>
                                 </div>
                             </a>
@@ -542,7 +331,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="hover-scale">
                                 <div class="product-recipe">
-                                    <img src="./assets/img/recipe/recipe4.png" alt="">
+                                    <img src="https://images.absolutdrinks.com/ingredient-images/Raw/Absolut/fc116c1f-80b5-4db0-8251-c3058b810326.jpg?imwidth=175" alt="">
                                     <h4>Công thức 1</h4>
                                 </div>
                             </a>
@@ -550,7 +339,7 @@
                         <div class="swiper-slide">
                             <a href="#" class="hover-scale">
                                 <div class="product-recipe">
-                                    <img src="./assets/img/recipe/recipe5.png" alt="">
+                                    <img src="https://images.absolutdrinks.com/ingredient-images/Raw/Absolut/4656967f-836e-4117-ae60-b2b9beadc9cf.jpg?imwidth=175" alt="">
                                     <h4>Công thức 1</h4>
                                 </div>
                             </a>
@@ -558,18 +347,121 @@
                         <div class="swiper-slide">
                             <a href="#" class="hover-scale">
                                 <div class="product-recipe">
-                                    <img src="./assets/img/recipe/recipe1.png" alt="">
+                                    <img src="https://images.absolutdrinks.com/ingredient-images/Raw/Absolut/ab744a53-fe63-4459-8d3b-a3dabf30f35a.jpg?imwidth=175" alt="">
                                     <h4>Công thức 1</h4>
                                 </div>
                             </a>
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </div>
     </section>
     <div class="clr"></div>
+    <section class="banner-lifestyle">
+        <div class="container">
+            <div class="banner-img">
+                <img src="./assets/img/banner/banner 4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="clr"></div>
+    <section class="product">
+        <div class="container">
+            <div class="product__main">
+                <!-- <div class="title-heading">
+                    <h2>Sản phẩm nổi bật</h2>
+                </div>     -->
+                    <div class="product-list-items">
+                        <div class="product-item">
+                            <a href="./detail-recipe.html">
+                                <div class="product-img">
+                                    <img src="./assets/img/Kem/Kem béo thực vật.png" alt="">
+                                </div>
+                                <h4 class="product-name">Kem béo thực vật</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Kem/Kem béo vị sữa.png" alt="">
+                                </div>
+                                <h4 class="product-name">Kem béo vị sữa</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Kem/Kem pha chế đa dụng yaua.png" alt="">
+                                </div>
+                                <h4 class="product-name">Kem đa dụng từ Ya-ua</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Siro/syrup-glacier-mint.png" alt="">
+                                </div>
+                                <h4 class="product-name">Siro Bạc Hà Glacier Mint</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                </div>
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
 
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                </div>
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                </div>
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                </div>
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                </div>
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <div class="product-img">
+                                    <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                </div>
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </a>
+                        </div>
+                    </div>
+              
+            </div>
+        </div>
+    </section>
+    <div class="clr"></div>
     <footer>
         <div class="container">
             <div class="row footer__main">
@@ -577,13 +469,11 @@
                     <p>Người đại diện theo pháp luật của doanh nghiệp: Ông Chan Wai Chiew</p>
                     <p>Giấy chứng nhận đăng ký kinh doanh số: 463042000005</p>
                     <p>Cấp ngày 19 tháng 10 năm 2006 | Nơi cấp: Ban quản lý Khu công nghiệp Việt Nam – Singapore</p>
-                    <p>Địa chỉ nhà máy: Số 27, đường số 3, KCN VSIP II, Phường Hòa Phú, Tp. Thủ Dầu Một, Bình Dương</p>
-                    <p>Địa chỉ văn phòng: Tầng 15, Tòa nhà Xổ Số Kiến Thiết, 77 Trần Nhân Tôn, Phường 9, Quận 5, Tp. Hồ Chí Minh</p>
                     <p>Tel: 028 3866 4789 | Fax: +84 28 3866 2679 | Email: ChamSocKhachHang@rich.com </p>
                 </div>
                 <div class="col-5 footer-icon">
                     <div class="d-flex">
-                        <ul class="item-list-icon d-flex">
+                        <ul class="item-list-icon">
                             <li>
                                 <a href=""><img src="./assets/img/iconfb.png" alt=""></a>
                             </li>
@@ -603,6 +493,9 @@
                 <p class="copyright">© 2021 ICEHOT Vietnam, All Rights Reserved.
                 </p>
             </div>
+        </div>
+        <div class="mess-fb">
+            <a href="https://www.facebook.com/ICEHOTVietnam"><img src="./assets/img/fanpage-mess.png" alt=""></a>
         </div>
     </footer>
     <script src="./assets/main/recipe.js"></script>

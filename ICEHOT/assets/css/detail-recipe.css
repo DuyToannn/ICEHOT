@@ -84,9 +84,39 @@
     color: dimgray !important;
 }
 
+.product-list-items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.product-img img {
+    width: 100%
+}
+
+.video-product {
+    width: 100%;
+}
+
+.video-product iframe {
+    width: 100%;
+}
+
 .slide-large iframe {
     width: 100%;
-    height: 100vh;
+}
+
+.title-heading h2 {
+    text-align: left !important;
+    font-size: 25px !important;
+}
+.product-involve{
+    margin-top: 80px;
+}
+.product-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--color-blue);
+    text-align: center;
 }
 
 
@@ -101,12 +131,12 @@
 }
 
 .content-inner {
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .content-left {
-    padding-top: 40px;
-    padding-right: 30px;
+    width: 39.9999%;
+
     box-shadow: 20px -20px 20px 0 rgb(0 0 0 / 5%);
 }
 
@@ -127,19 +157,12 @@
 }
 
 .sidebar-right {
-    width: 33.333333%;
-    padding-top: 40px;
-    padding-left: 30px;
-}
+    width: 59.9999%;
 
-article {
-    width: 66.666667%;
 }
-
-aside {
-    width: 33.333333%;
+.main-content {
+    gap: 50px;
 }
-
 aside h2 {
     font-weight: 700;
     font-size: 20px;
@@ -189,15 +212,17 @@ aside h2 {
     width: 100%;
 }
 
-.title-product {
-    height: 100px;
-}
 
 .title-product h1 {
-    font-size: 80px;
-    color: #0033a0;
+    font-size: 35px;
+    color: var(--color-blue);
     margin: 0;
     font-family: 'Gotham Bold';
+    text-transform: uppercase;
+}
+
+.drinks-content {
+    margin-top:30px;
 }
 
 .title-product p {
@@ -250,13 +275,27 @@ aside h2 {
     font-weight: normal;
 }
 
-.drinks-content h3 {
-    margin: 0;
+.title-heading {
+    position: relative;
+    margin: 1rem 0;
     font-size: 20px;
-    color: #0033a0;
+    color: var(--color-blue);
+    font-weight: bold;
+    padding-left: 10px;
 }
 
-.drinks-content ul {}
+.title-heading::before {
+    content: '';
+    width: 4px;
+    height: 28px;
+    background: var(--color-red);
+    position: absolute;
+    left: 0;
+}
+
+.drinks-content ul {
+    margin-top: 1rem;
+}
 
 .drinks-content ul li {
     margin-bottom: 4px;
@@ -314,15 +353,6 @@ aside h2 {
     --text-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity))
-}
-
-.product-article-des h3,
-.product-rate h3 {
-    font-family: 'Gotham Light';
-    color: #0033a0;
-    margin: 20px 0 5px 0;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .product-article-des p {

@@ -35,34 +35,14 @@
 
       });
 
-      var swiper = new Swiper(".slider-involve", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-          },
-          //   autoplay: {
-          //       delay: 3000,
-          //       disableOnInteraction: true,
-          //   },
-          breakpoints: {
-              320: {
-                  slidesPerView: 2,
 
-              },
-              480: {
-                  slidesPerView: 2,
 
-              },
-              900: {
-                  slidesPerView: 3,
 
-              },
-              1200: {
-                  slidesPerView: 3,
-                  spaceBetween: -100
-              }
-
-          }
+      var swiper = new Swiper(".product-highlight", {
+        slidesPerView: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
+    

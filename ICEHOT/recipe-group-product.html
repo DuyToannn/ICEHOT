@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/detail-recipe.css">
+    <link rel="stylesheet" href="./assets/css/recipe-group-product.css">
+    <link rel="stylesheet" href="./assets/css/media/recipe-media.css">
     <link rel="stylesheet" href="./assets/css/headerallpage.css">
     <link rel="stylesheet" href="./assets/css/_colors.css">
-    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/media/footer-media.css">
-    <link rel="stylesheet" href="./assets/css/media/detail-recipe.css">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>ICEHOT</title>
 </head>
 
@@ -236,159 +235,184 @@
             </div>
         </div>
     </header>
-    <section class="content-inner">
-        <div class="container">
-            <div class="main-content flex">
-                <article class="content-left">
-                    <div class="embed-responsive">
-                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                            class="swiper mySwiper2">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide slide-large">
-                                    <!-- <a href="#video-pre"><i class="fas fa-play-circle"></i></a> -->
-                                    <img src="./assets/img/Kem/Kem béo thực vật.png" />
-                                </div>
-                                <div class="swiper-slide slide-large">
-                                    <img src="./assets/img/Kem/Kem béo thực vật.png" />
-                                </div>
-                                <div class="swiper-slide slide-large video-pre " id="video-pre">
-                                    <div class="video-product">
-                                        <iframe height="600" src="https://www.youtube.com/embed/5lW6MKjhBng"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div thumbsSlider="" class="swiper mySwiper slide-product" style="margin-top: 15px;">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide slide-small">
-                                    <img src="./assets/img/Kem/Kem béo thực vật.png" />
-                                </div>
-                                <div class="swiper-slide slide-small">
-                                    <img src="./assets/img/Kem/Kem béo thực vật.png" />
-                                </div>
-                                <div class="swiper-slide slide-small video-pre">
-                                    <img src="https://img.youtube.com/vi/rHYTfyA7MHg/0.jpg" alt="" width="70"
-                                        height="70">
-                                </div>
-                            </div>
-                        </div>
+    <section class="swiper banner banner-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide banner-head">
+                <a href="#" class="img-banner">
+                    <div class="viewport-banner">
+                        <img src="./assets/img/banner/banner 1.webp" alt="">
                     </div>
-                </article>
-                <aside class="sidebar-right">
-                    <div class="">
-                        <div class="title-product">
-                            <h1>Kem béo thực vật</h1>
-                            <p class="">Absolut Vodka, Tomato Juice, Hot Sauce, Worcestershire Sauce, Lemon Juice,
-                                Ground Black Pepper, Garlic Salt, Lemon, Celery</p>
-                        </div>
-                        <div class="show-more">
-                            <button class="btn-show">MAKE THIS DRINKS</button>
-
-                        </div>
-
-                        <div class="drinks-content">
-                            <div class="repice-product">
-                            </div>
-                            <h3 class="title-heading">THÀNH PHẦN</h3>
-                            <ul class="drink-recipe" data-chosen-measurement="part">
-                                <li><span data-measurement="part">1½ Parts</span>
-                                    <span data-measurement="ml">45ml</span>
-                                    <span data-measurement="fl.oz">1½ oz</span>
-                                    <a class="u" href="">Absolut Vodka</a>
-                                </li>
-                                <li><span data-measurement="part">5 Parts</span>
-                                    <span data-measurement="ml">150 ml</span>
-                                    <span data-measurement="fl.oz">5 oz</span>
-                                    <a class="u" href="">Tomato Juice</a>
-                                </li>
-                                <li><span data-measurement="part">4 Dashes</span>
-                                    <span data-measurement="ml">4Dashes</span>
-                                    <span data-measurement="fl.oz">4 Dashes</span>
-                                    <a class="u" href="">Hot Sauce</a>
-                                </li>
-                                <li><span data-measurement="part">⅓ Part</span>
-                                    <span data-measurement="ml">10 ml</span>
-                                    <span data-measurement="fl.oz">⅓ oz</span>
-                                    <a class="u" href="">Worcestershire Sauce</a>
-                                </li>
-                                <li><span data-measurement="part">⅓ Part</span>
-                                    <span data-measurement="ml">10 ml</span>
-                                    <span data-measurement="fl.oz">⅓ oz</span>
-                                    <a class="u" href="">Lemon Juice</a>
-                                </li>
-                                <li><span data-measurement="part">1 Pinch</span>
-                                    <span data-measurement="ml">1 Pinch</span>
-                                    <span data-measurement="fl.oz">1 Pinch</span>
-                                    <a class="u" href="">Ground Black Pepper</a>
-                                </li>
-                                <li><span data-measurement="part">1 Pinch</span>
-                                    <span data-measurement="ml">1 Pinch</span> <span data-measurement="fl.oz">1
-                                        Pinch</span>
-                                    <a class="u" href="">Garlic Salt</a>
-                                </li>
-                                <li><span data-measurement="part">1 Wedge</span> <span data-measurement="ml">1
-                                        Wedge</span>
-                                    <span data-measurement="fl.oz">1 Wedge</span>
-                                    <a class="u" href="">Lemon</a>
-                                </li>
-                                <li><span data-measurement="part">1 Stick</span>
-                                    <span data-measurement="ml">1 Stick</span>
-                                    <span data-measurement="fl.oz">1 Stick</span> <a class="u" href="">Celery</a>
-                                </li>
-                            </ul>
-                            <div class="measurement-switcher" data-chosen-measurement="part">
-                                <button data-measurement="part">Parts</button>
-                                <button data-measurement="ml">ml</button>
-                                <button data-measurement="fl.oz">oz</button>
-                            </div>
-                            <div class="product-article-des">
-                                <h3 class="title-heading">CÁCH LÀM</h3>
-                                <p>• If you’re making one for brunch, then don’t make your Bloody Mary too strong.
-                                    <br><br>• Legend says that the first Bloody Mary was actually made with gin rather
-                                    than vodka (which we today know as a Red Snapper).Gin was then substituted with
-                                    vodka and the drink became incredibly popular in the
-                                    US!.
-                                    <br><br>• Substitute the tomato juice with Clamato juice and all of a sudden you
-                                    have a Bloody Caesar instead (in hand)!<br><br>• There are probably as many
-                                    variations of Bloody Marys as there are bartenders. Your imagination
-                                    is your only limit when it comes to experimenting!
-                                </p>
-                            </div>
-                            <div class="clr"></div>
-                            <div class="color-suggestions">
-                                <a href="void:javascript" class="cc color-combination-1">Absolut Vodka</a>
-                                <a href="void:javascript" class="cc color-combination-2">Tomato Juice</a>
-                                <a href="void:javascript" class="cc color-combination-3">Hot Sauce</a>
-                                <a href="void:javascript" class="cc color-combination-4">Worcestershire Sauce</a>
-                                <a href="void:javascript" class="cc color-combination-5">Lemon Juice</a>
-                                <a href="void:javascript" class="cc color-combination-6">Ground Black Pepper</a>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="product">
+    <div class="product-filter">
+        <!-- <h2>Product Attribution</h2> -->
+        <ul class="list">
+            <li><a href="">Kem pha chế</a></li>
+            <li class="active"><a href="">Siro/ Sốt</a></li>
+            <li><a href="">Mứt sinh tố</a></li>
+            <li><a href="">Pudding</a></li>
+        </ul>
+    </div>
+
+    <section class="recipe-trend">
         <div class="container">
-            <div class="product__main">
-                <div class="title-heading">
-                    <h2>Sản phẩm trong công thức</h2>
+            <div class="title-heading">
+                <h2>CÔNG THỨC XU HƯỚNG</h2>
+            </div>
+            <div class="swiper product-trend">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./recipe.html">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem béo thực vật.png" alt="">
+                                <h4 class="product-name">Kem béo thực vật</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem béo vị sữa.png" alt="">
+                                <h4 class="product-name">Kem béo vị sữa</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem pha chế đa dụng yaua.png" alt="">
+                                <h4 class="product-name">Kem đa dụng từ Ya-ua</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Siro/syrup-glacier-mint.png" alt="">
+                                <h4 class="product-name">Siro Bạc Hà Glacier Mint</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="product-list-items">
-                    <div class="product-item">
-                        <a href="./detail-recipe.html">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section class="recipe-love">
+        <div class="container">
+            <div class="title-heading">
+                <h2>ĐƯỢC YÊU THÍCH NHẤT</h2>
+            </div>
+            <div class="swiper product-love">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./recipe.html">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem béo thực vật.png" alt="">
+                                <h4 class="product-name">Kem béo thực vật</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem béo vị sữa.png" alt="">
+                                <h4 class="product-name">Kem béo vị sữa</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem pha chế đa dụng yaua.png" alt="">
+                                <h4 class="product-name">Kem đa dụng từ Ya-ua</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Siro/syrup-glacier-mint.png" alt="">
+                                <h4 class="product-name">Siro Bạc Hà Glacier Mint</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
+                                <h4 class="product-name">Siro Hương Chanh Vàng</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section id="discover-icehot">
+        <div class="container">
+            <div class="title-heading">
+                <h2>KHÁM PHÁ CÙNG ICEHOT</h2>
+            </div>
+            <div class="swiper product-discover">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="./recipe.html">
                             <div class="product-img">
                                 <img src="./assets/img/Kem/Kem béo thực vật.png" alt="">
                             </div>
                             <h4 class="product-name">Kem béo thực vật</h4>
                         </a>
                     </div>
-                    <div class="product-item">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem béo vị sữa.png" alt="">
+                            </div>
+                            <h4 class="product-name">Kem béo vị sữa</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="product-img">
+                                <img src="./assets/img/Kem/Kem pha chế đa dụng yaua.png" alt="">
+                            </div>
+                            <h4 class="product-name">Kem đa dụng từ Ya-ua</h4>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
                         <a href="#">
                             <div class="product-img">
                                 <img src="./assets/img/Siro/syrup-glacier-mint.png" alt="">
@@ -396,7 +420,7 @@
                             <h4 class="product-name">Siro Bạc Hà Glacier Mint</h4>
                         </a>
                     </div>
-                    <div class="product-item">
+                    <div class="swiper-slide">
                         <a href="#">
                             <div class="product-img">
                                 <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
@@ -405,39 +429,7 @@
 
                         </a>
                     </div>
-                    <div class="product-item">
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
-                            </div>
-                            <h4 class="product-name">Siro Hương Chanh Vàng</h4>
-                        </a>
-                    </div>
-                    <div class="product-item">
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
-                            </div>
-                            <h4 class="product-name">Siro Hương Chanh Vàng</h4>
-                        </a>
-                    </div>
-                    <div class="product-item">
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
-                            </div>
-                            <h4 class="product-name">Siro Hương Chanh Vàng</h4>
-                        </a>
-                    </div>
-                    <div class="product-item">
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
-                            </div>
-                            <h4 class="product-name">Siro Hương Chanh Vàng</h4>
-                        </a>
-                    </div>
-                    <div class="product-item">
+                    <div class="swiper-slide">
                         <a href="#">
                             <div class="product-img">
                                 <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
@@ -446,54 +438,13 @@
                         </a>
                     </div>
                 </div>
-
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
-    <section class="product-involve">
-        <div class="container">
-            <div class="product__main">
-                <div class="title-heading">
-                    <h2>CÔNG THỨC LIÊN QUAN</h2>
-                </div>
-                <div class="product-list-items">
-                    <div class="product-item">
-                        <a href="./detail-recipe.html">
-                            <div class="product-img">
-                                <img src="./assets/img/Kem/Kem béo thực vật.png" alt="">
-                            </div>
-                            <h4 class="product-name">Kem béo thực vật</h4>
-                        </a>
-                    </div>
-                    <div class="product-item">
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="./assets/img/Siro/syrup-glacier-mint.png" alt="">
-                            </div>
-                            <h4 class="product-name">Siro Bạc Hà Glacier Mint</h4>
-                        </a>
-                    </div>
-                    <div class="product-item">
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
-                            </div>
-                            <h4 class="product-name">Siro Hương Chanh Vàng</h4>
 
-                        </a>
-                    </div>
-                    <div class="product-item">
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="./assets/img/Siro/syrup-lemonade.png" alt="">
-                            </div>
-                            <h4 class="product-name">Siro Hương Chanh Vàng</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="clr"></div>
 
     <footer>
         <div class="container">
@@ -509,7 +460,7 @@
                 </div>
                 <div class="col-5 footer-icon">
                     <div class="d-flex">
-                        <ul class="item-list-icon d-flex ">
+                        <ul class="item-list-icon d-flex">
                             <li>
                                 <a href=""><img src="./assets/img/iconfb.png" alt=""></a>
                             </li>
@@ -531,7 +482,7 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/main/detail-recipe.js"></script>
+    <script src="./assets/main/recipe-group-product.js"></script>
 </body>
 
 </html>

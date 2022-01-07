@@ -31,6 +31,10 @@ var swiper = new Swiper(".recipe-slider", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     // autoplay: {
     //     delay: 4000,
     //     disableOnInteraction: true,
@@ -50,7 +54,7 @@ var swiper = new Swiper(".recipe-slider", {
         },
         1200: {
             slidesPerView: 5,
-            spaceBetween: -100
+           
         }
 
     }

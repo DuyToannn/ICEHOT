@@ -28,3 +28,8 @@
     src: url(../fonts/DIN/DIN-Condensed-Bold.woff2);
 }
 
+@font-face {
+    font-family: 'Main';
+    src: url(../fonts/Main/main-bold.woff2);
+}
+

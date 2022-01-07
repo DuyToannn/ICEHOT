@@ -8,6 +8,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
+    grabCursor: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -16,6 +17,14 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
+
+var swiper = new Swiper(".product-in-recipe", {
+    slidesPerView: 5,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 
 

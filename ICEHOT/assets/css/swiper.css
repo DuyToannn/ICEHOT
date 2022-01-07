@@ -28,3 +28,23 @@
     height: 100%;
     object-fit: cover;
 }
+
+.swiper-button-next, .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+    background: var(--color-blue);
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px !important;
+}
+
+.swiper-button-prev {
+    left: 10px !important;
+}
+.swiper-button-next {
+    right: 10px !important;
+}
+
